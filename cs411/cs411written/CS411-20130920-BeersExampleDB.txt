@@ -1,0 +1,103 @@
+***********************************************
+
+
+Beers(name, manf)
+
+Bars(name, city, owner)
+
+Drinkers(name, city, phone)
+
+Likes(drinker, beer)
+
+Sells(bar, beer, price)
+
+Frequents(drinker, bar)
+
+***********************************************
+
+** Database cs411_beers
+
+create database cs411_beers;
+use cs411_beers;
+
+** Table beers
+
+create table beers (
+name char(20),
+manf char(20)
+);
+
+
+insert into beers values ('bud', 'busch');
+insert into beers values ('bud lite', 'busch');
+insert into beers values ('sam adam', 'boston');
+insert into beers values ('michelob', 'busch');
+
+** Table bars
+
+create table bars (
+name char(20),
+city char(20),
+owner char(20)
+);
+
+insert into bars values ('joe bar', 'champaign', 'joe');
+insert into bars values ('green st bar', 'champaign','sally');
+insert into bars values ('purple bar', 'urbana','paul');
+
+** Table sells
+
+create table sells (
+bar char(20),
+beer char(20),
+price real
+);
+
+insert into sells values ('joe bar', 'bud', 5.0);
+insert into sells values ('joe bar', 'bud lite', 3.0);
+insert into sells values ('joe bar', 'sam adam', 6.0);
+insert into sells values ('green st bar', 'sam adam', 4.5);
+insert into sells values ('green st bar', 'bud', 6.0);
+insert into sells values ('green st bar', 'michelob', null);
+insert into sells values ('purple bar', 'bud', '4.5');
+insert into sells values ('purple bar', 'sam adam', 5.0);
+
+
+** Table drinkers
+
+create table drinkers (
+name char(20),
+city char(20),
+phone char(20)
+);
+
+insert into drinkers values ('alex', 'champaign', '(217) 111-2222');
+insert into drinkers values ('bob', 'champaign', '(217) 333-4444');
+insert into drinkers values ('sally', 'urbana', '(315) 555-6666');
+insert into drinkers values ('rob', 'savoy', '(217) 777-8888');
+
+
+** Table likes
+
+create table likes (
+drinker char(20),
+beer char(20)
+);
+
+insert into likes values ('alex', 'sam adam');
+insert into likes values ('alex', 'michelob');
+insert into likes values ('sally', 'bud');
+insert into likes values ('sally', 'michelob');
+insert into likes values ('rob', 'bud lite');
+
+** Table frequents
+
+create table frequents (
+drinker char(20),
+bar char(20)
+);
+
+insert into frequents values ('alex', 'joe bar');
+insert into frequents values ('sally', 'green st bar');
+insert into frequents values ('rob', 'joe bar');
+

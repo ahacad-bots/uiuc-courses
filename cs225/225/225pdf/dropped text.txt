@@ -1,0 +1,129 @@
+Lecture Date
+	Links
+5/04/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/1b1765dd-3d21-4f07-b65f-53d17e867251
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/1b1765dd-3d21-4f07-b65f-53d17e867251/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/1b1765dd-3d21-4f07-b65f-53d17e867251/media.m4v
+5/02/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/3e8dede4-d650-44ce-86e5-4faff0e97c92
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/3e8dede4-d650-44ce-86e5-4faff0e97c92/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/3e8dede4-d650-44ce-86e5-4faff0e97c92/media.m4v
+4/29/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/244b3e75-cad4-4f59-aa7f-2be61e68158c
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/244b3e75-cad4-4f59-aa7f-2be61e68158c/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/244b3e75-cad4-4f59-aa7f-2be61e68158c/media.m4v
+4/27/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/88549e59-99cb-4013-951c-56c876b37f56
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/88549e59-99cb-4013-951c-56c876b37f56/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/88549e59-99cb-4013-951c-56c876b37f56/media.m4v
+4/25/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/0d892418-b335-404e-a84a-f4c902922c5c
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/0d892418-b335-404e-a84a-f4c902922c5c/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/0d892418-b335-404e-a84a-f4c902922c5c/media.m4v
+4/22/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/53958cb5-92e4-4888-ac57-e22924eae169
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/53958cb5-92e4-4888-ac57-e22924eae169/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/53958cb5-92e4-4888-ac57-e22924eae169/media.m4v
+4/20/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/7402f999-4540-41be-be4a-3df1b9809358
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/7402f999-4540-41be-be4a-3df1b9809358/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/7402f999-4540-41be-be4a-3df1b9809358/media.m4v
+4/18/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/919cb84d-1dbc-4cd5-bfce-17d3dfbb94bd
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/919cb84d-1dbc-4cd5-bfce-17d3dfbb94bd/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/919cb84d-1dbc-4cd5-bfce-17d3dfbb94bd/media.m4v
+4/15/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/686e86eb-affb-42ed-80ea-6a045924e4ff
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/686e86eb-affb-42ed-80ea-6a045924e4ff/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/686e86eb-affb-42ed-80ea-6a045924e4ff/media.m4v
+4/13/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/1ab768d3-7edf-452f-b600-a52db2fbea43
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/1ab768d3-7edf-452f-b600-a52db2fbea43/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/1ab768d3-7edf-452f-b600-a52db2fbea43/media.m4v
+4/11/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c1337345-0d46-4367-9232-e2a417c76919
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c1337345-0d46-4367-9232-e2a417c76919/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c1337345-0d46-4367-9232-e2a417c76919/media.m4v
+4/08/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a7530d4a-6289-4f35-899e-03987afec649
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a7530d4a-6289-4f35-899e-03987afec649/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a7530d4a-6289-4f35-899e-03987afec649/media.m4v
+4/06/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/b6ad4d4a-9805-4bb8-9f09-d1fc6ffab54e
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/b6ad4d4a-9805-4bb8-9f09-d1fc6ffab54e/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/b6ad4d4a-9805-4bb8-9f09-d1fc6ffab54e/media.m4v
+4/04/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/620e3c9c-b2f4-431e-8e3f-2a93ca079b2b
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/620e3c9c-b2f4-431e-8e3f-2a93ca079b2b/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/620e3c9c-b2f4-431e-8e3f-2a93ca079b2b/media.m4v
+4/01/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/63622d44-adbf-4400-b4db-80a31bb4c8b1
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/63622d44-adbf-4400-b4db-80a31bb4c8b1/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/63622d44-adbf-4400-b4db-80a31bb4c8b1/media.m4v
+3/30/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/e1c54315-67f7-413e-9f05-7834c16b3188
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/e1c54315-67f7-413e-9f05-7834c16b3188/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/e1c54315-67f7-413e-9f05-7834c16b3188/media.m4v
+3/28/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c34b7103-1331-4d75-b64b-8efa929cdb62
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c34b7103-1331-4d75-b64b-8efa929cdb62/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c34b7103-1331-4d75-b64b-8efa929cdb62/media.m4v
+3/18/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/9023ee92-ad60-4260-bfb7-2db5bed5982f
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/9023ee92-ad60-4260-bfb7-2db5bed5982f/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/9023ee92-ad60-4260-bfb7-2db5bed5982f/media.m4v
+3/16/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/8c04c82f-6477-4461-b508-15d06305a879
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/8c04c82f-6477-4461-b508-15d06305a879/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/8c04c82f-6477-4461-b508-15d06305a879/media.m4v
+3/14/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/0819fc10-e937-4c5c-bcba-b82820cfe0ae
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/0819fc10-e937-4c5c-bcba-b82820cfe0ae/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/0819fc10-e937-4c5c-bcba-b82820cfe0ae/media.m4v
+3/11/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a303f5cf-81f3-49a2-b28b-84a9ebf95e17
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a303f5cf-81f3-49a2-b28b-84a9ebf95e17/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a303f5cf-81f3-49a2-b28b-84a9ebf95e17/media.m4v
+3/09/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/28b532bc-60be-456e-a8a6-cc37a867d0a7
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/28b532bc-60be-456e-a8a6-cc37a867d0a7/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/28b532bc-60be-456e-a8a6-cc37a867d0a7/media.m4v
+3/07/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c4160ce1-0bae-429a-b507-4e11d4711645
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c4160ce1-0bae-429a-b507-4e11d4711645/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c4160ce1-0bae-429a-b507-4e11d4711645/media.m4v
+3/04/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c0d153cd-d6ed-4c7d-a573-4bd1b8c98117
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c0d153cd-d6ed-4c7d-a573-4bd1b8c98117/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c0d153cd-d6ed-4c7d-a573-4bd1b8c98117/media.m4v
+3/02/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/75800073-3ae6-4495-972f-ae2bef56cba9
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/75800073-3ae6-4495-972f-ae2bef56cba9/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/75800073-3ae6-4495-972f-ae2bef56cba9/media.m4v
+2/28/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/6cc60495-c69f-4dc3-aad3-40343685eae9
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/6cc60495-c69f-4dc3-aad3-40343685eae9/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/6cc60495-c69f-4dc3-aad3-40343685eae9/media.m4v
+2/25/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/4db6e683-06f0-4fc5-a754-9657e6889cd8
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/4db6e683-06f0-4fc5-a754-9657e6889cd8/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/4db6e683-06f0-4fc5-a754-9657e6889cd8/media.m4v
+2/23/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/e8afb16d-d00b-4c03-b65b-07367c66f0bc
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/e8afb16d-d00b-4c03-b65b-07367c66f0bc/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/e8afb16d-d00b-4c03-b65b-07367c66f0bc/media.m4v
+2/21/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/ed88e646-336a-49bd-84d1-fbbd8b04d354
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/ed88e646-336a-49bd-84d1-fbbd8b04d354/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/ed88e646-336a-49bd-84d1-fbbd8b04d354/media.m4v
+2/18/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/65fdf076-8aff-4000-aab4-5da53e316248
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/65fdf076-8aff-4000-aab4-5da53e316248/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/65fdf076-8aff-4000-aab4-5da53e316248/media.m4v
+2/16/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/4506a2c2-58e1-4e91-9282-dc416459d797
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/4506a2c2-58e1-4e91-9282-dc416459d797/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/4506a2c2-58e1-4e91-9282-dc416459d797/media.m4v
+2/14/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/191a33e7-50b9-45e4-ada7-359364e82167
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/191a33e7-50b9-45e4-ada7-359364e82167/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/191a33e7-50b9-45e4-ada7-359364e82167/media.m4v
+2/11/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/63496108-b6a6-47d0-84ec-3aa7d6d72331
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/63496108-b6a6-47d0-84ec-3aa7d6d72331/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/63496108-b6a6-47d0-84ec-3aa7d6d72331/media.m4v
+2/09/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c0934ee1-8ed5-420b-b969-bd384bda0765
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c0934ee1-8ed5-420b-b969-bd384bda0765/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/c0934ee1-8ed5-420b-b969-bd384bda0765/media.m4v
+2/07/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/aeab7b34-e778-4ccb-b8f0-de8852455b51
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/aeab7b34-e778-4ccb-b8f0-de8852455b51/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/aeab7b34-e778-4ccb-b8f0-de8852455b51/media.m4v
+2/04/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/86a9db17-d463-406a-ae31-6e57d6984939
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/86a9db17-d463-406a-ae31-6e57d6984939/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/86a9db17-d463-406a-ae31-6e57d6984939/media.m4v
+1/31/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/d6952e03-e7a6-467e-8c13-87e137baa32e
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/d6952e03-e7a6-467e-8c13-87e137baa32e/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/d6952e03-e7a6-467e-8c13-87e137baa32e/media.m4v
+1/28/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/31719bc9-0b5d-4a4e-92b6-def5ebd6225c
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/31719bc9-0b5d-4a4e-92b6-def5ebd6225c/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/31719bc9-0b5d-4a4e-92b6-def5ebd6225c/media.m4v
+1/26/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/2fca6e37-9c5d-4300-ba90-87be4b13f034
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/2fca6e37-9c5d-4300-ba90-87be4b13f034/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/2fca6e37-9c5d-4300-ba90-87be4b13f034/media.m4v
+1/24/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a7bb876f-1a33-4fff-a064-08d6961d9c23
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a7bb876f-1a33-4fff-a064-08d6961d9c23/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/a7bb876f-1a33-4fff-a064-08d6961d9c23/media.m4v
+1/21/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/23704c7a-24f2-4aa3-8f8f-e09d9fc9f920
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/23704c7a-24f2-4aa3-8f8f-e09d9fc9f920/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/23704c7a-24f2-4aa3-8f8f-e09d9fc9f920/media.m4v
+1/19/11 	Echo Link: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/abb6959a-7e33-42d3-bf12-f7d6c9c74a4c
+Audio URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/abb6959a-7e33-42d3-bf12-f7d6c9c74a4c/media.mp3
+Vodcast URL: http://dcs-echoess.cs.illinois.edu:8080/ess/echo/presentation/abb6959a-7e33-42d3-bf12-f7d6c9c74a4c/media.m4v
+  	 

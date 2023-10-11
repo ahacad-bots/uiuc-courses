@@ -1,0 +1,155 @@
+Monad Autograder
+Testing mp2 at 2013-09-21 00:33:44
+
+"The cheating sheet is key to success in CS 412 course." ~ CS 412 TA
+
+Setting up test environment...
+Compiling...
+================================================================
+../source/cc-monad g++ -c -g -O0 -Wall -Werror testimage.cpp
+../source/cc-monad g++ testimage.o image.o png.o rgbapixel.o -lpng -o testimage 
+
+
+Running tests...
+================================================================
+InvertColorsEven . . . . . . . . . . . [8 pts] - passed
+FlipLeftEven . . . . . . . . . . . . . [5 pts] - passed
+FlipLeftOdd  . . . . . . . . . . . . . [5 pts] - passed
+AdjustBrightnessEven . . . . . . . . . [6 pts] - passed
+AdjustBrightnessEven2  . . . . . . . . [3 pts] - passed
+AdjustBrightnessEven3  . . . . . . . . [3 pts] - passed
+Valgrind1 (valgrind) . . . . . . . . . [5 pts] - passed
+AddPictureValidIndex . . . . . . . . . [3 pts] - passed
+AddPictureInvalidIndex . . . . . . . . [2 pts] - passed
+ImageAssignmentOperator  . . . . . . . [2 pts] - passed
+SceneGetPictureInvalidIndex  . . . . . [2 pts] - passed
+SceneChangeMaxLayersLarger . . . . . . [3 pts] - passed
+SceneChangeMaxLayersSmaller (valgrind) [1 pts] - FAILED: Invalid read/write errors
+SceneChangeMaxLayersInvalidChange  . . [2 pts] - passed
+SceneCopyCtor  . . . . . . . . . . . . [3 pts] - passed
+SceneCopyCtor2 . . . . . . . . . . . . [2 pts] - passed
+SceneAssignmentOperator  . . . . . . . [3 pts] - passed
+SceneAssignmentOperator2 . . . . . . . [2 pts] - passed
+SceneChangeLayer . . . . . . . . . . . [3 pts] - passed
+SceneChangeLayerInvalid  . . . . . . . [2 pts] - passed
+SceneDrawScene . . . . . . . . . . . . [3 pts] - passed
+SceneDrawScene2  . . . . . . . . . . . [3 pts] - passed
+SceneDrawScene3  . . . . . . . . . . . [3 pts] - passed
+SceneDrawScene4  . . . . . . . . . . . [3 pts] - passed
+SceneDrawSceneChangeLayer  . . . . . . [2 pts] - passed
+SceneDrawSceneDeletePicture  . . . . . [2 pts] - passed
+SceneDrawSceneTranslate  . . . . . . . [2 pts] - passed
+SceneDrawSceneTranslate2 . . . . . . . [2 pts] - passed
+SceneTranslateInvalid  . . . . . . . . [2 pts] - passed
+SceneTranslateInvalid2 . . . . . . . . [1 pts] - passed
+SceneDeletePictureInvalid  . . . . . . [2 pts] - passed
+Valgrind2 (valgrind) . . . . . . . . . [5 pts] - passed
+Valgrind3 (valgrind) . . . . . . . . . [5 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 99
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+SceneChangeMaxLayersSmaller (run under valgrind) [1 points]
+Result: FAILED: Invalid read/write errors
+Took unknown time (2000ms timeout)
+Output:
+----------------------------------------------------------------
+Running SceneChangeMaxLayersSmaller [worth 1 points, output below]
+==29714== Invalid write of size 8
+==29714==    at 0x404F8D: Scene::changemaxlayers(int) (scene.cpp:135)
+==29714==    by 0x41076F: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==29714==    by 0x4141CF: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==29714==    by 0x409DA5: proxy::test_execution::child_test() (testimage.cpp:870)
+==29714==    by 0x4097C4: proxy::test_execution::child() (testimage.cpp:755)
+==29714==    by 0x416222: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==29714==    by 0x409C29: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==29714==    by 0x408AAE: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==29714==    by 0x4089B6: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==29714==    by 0x40881E: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==29714==    by 0x4087CF: proxy::RunTests::execute() (testimage.cpp:535)
+==29714==    by 0x407F6B: main (testimage.cpp:425)
+==29714==  Address 0x4c83908 is 0 bytes after a block of size 8 alloc'd
+==29714==    at 0x4A0674C: operator new[](unsigned long) (vg_replace_malloc.c:305)
+==29714==    by 0x404F30: Scene::changemaxlayers(int) (scene.cpp:130)
+==29714==    by 0x41076F: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==29714==    by 0x4141CF: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==29714==    by 0x409DA5: proxy::test_execution::child_test() (testimage.cpp:870)
+==29714==    by 0x4097C4: proxy::test_execution::child() (testimage.cpp:755)
+==29714==    by 0x416222: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==29714==    by 0x409C29: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==29714==    by 0x408AAE: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==29714==    by 0x4089B6: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==29714==    by 0x40881E: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==29714==    by 0x4087CF: proxy::RunTests::execute() (testimage.cpp:535)
+==29714== 
+==29714== Invalid write of size 4
+==29714==    at 0x404FB4: Scene::changemaxlayers(int) (scene.cpp:136)
+==29714==    by 0x41076F: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==29714==    by 0x4141CF: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==29714==    by 0x409DA5: proxy::test_execution::child_test() (testimage.cpp:870)
+==29714==    by 0x4097C4: proxy::test_execution::child() (testimage.cpp:755)
+==29714==    by 0x416222: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==29714==    by 0x409C29: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==29714==    by 0x408AAE: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==29714==    by 0x4089B6: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==29714==    by 0x40881E: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==29714==    by 0x4087CF: proxy::RunTests::execute() (testimage.cpp:535)
+==29714==    by 0x407F6B: main (testimage.cpp:425)
+==29714==  Address 0x4c83954 is 0 bytes after a block of size 4 alloc'd
+==29714==    at 0x4A0674C: operator new[](unsigned long) (vg_replace_malloc.c:305)
+==29714==    by 0x404F45: Scene::changemaxlayers(int) (scene.cpp:131)
+==29714==    by 0x41076F: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==29714==    by 0x4141CF: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==29714==    by 0x409DA5: proxy::test_execution::child_test() (testimage.cpp:870)
+==29714==    by 0x4097C4: proxy::test_execution::child() (testimage.cpp:755)
+==29714==    by 0x416222: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==29714==    by 0x409C29: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==29714==    by 0x408AAE: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==29714==    by 0x4089B6: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==29714==    by 0x40881E: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==29714==    by 0x4087CF: proxy::RunTests::execute() (testimage.cpp:535)
+==29714== 
+==29714== Invalid write of size 4
+==29714==    at 0x404FDA: Scene::changemaxlayers(int) (scene.cpp:137)
+==29714==    by 0x41076F: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==29714==    by 0x4141CF: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==29714==    by 0x409DA5: proxy::test_execution::child_test() (testimage.cpp:870)
+==29714==    by 0x4097C4: proxy::test_execution::child() (testimage.cpp:755)
+==29714==    by 0x416222: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==29714==    by 0x409C29: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==29714==    by 0x408AAE: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==29714==    by 0x4089B6: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==29714==    by 0x40881E: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==29714==    by 0x4087CF: proxy::RunTests::execute() (testimage.cpp:535)
+==29714==    by 0x407F6B: main (testimage.cpp:425)
+==29714==  Address 0x4c839a4 is 0 bytes after a block of size 4 alloc'd
+==29714==    at 0x4A0674C: operator new[](unsigned long) (vg_replace_malloc.c:305)
+==29714==    by 0x404F5A: Scene::changemaxlayers(int) (scene.cpp:132)
+==29714==    by 0x41076F: proxy_test::SceneChangeMaxLayersSmaller(util::sizedpipestream<512ul>&) (testscene.cpp:149)
+==29714==    by 0x4141CF: monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (monad_shared.h:72)
+==29714==    by 0x409DA5: proxy::test_execution::child_test() (testimage.cpp:870)
+==29714==    by 0x4097C4: proxy::test_execution::child() (testimage.cpp:755)
+==29714==    by 0x416222: int proxy::fork_execute<proxy::test_execution>(proxy::test_execution&) (testimage.cpp:829)
+==29714==    by 0x409C29: proxy::RunTests::execute_test(monad_shared::unit_test_input const&, bool) (testimage.cpp:810)
+==29714==    by 0x408AAE: proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (testimage.cpp:571)
+==29714==    by 0x4089B6: proxy::RunTests::run_single_test(char const*) (testimage.cpp:559)
+==29714==    by 0x40881E: proxy::RunTests::execute_by_mode() (testimage.cpp:544)
+==29714==    by 0x4087CF: proxy::RunTests::execute() (testimage.cpp:535)
+==29714== 
+index out of bounds
+Result: FAILED:
+Invalid read/write errors
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 99
+

@@ -1,0 +1,53 @@
+Monad Autograder
+Testing lab_race at 2013-11-19 14:12:56
+
+"We know about as much about software quality problems as they knew about the Black Plague in the 1600s. We've seen the victims' agonies and helped burn the corpses. We don't know what causes it; we don't really know if there is only one disease. We just suffer -- and keep pouring our sewage into our water supply." ~ Tom Van Vleck
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+table_correctness . . . . . . . [10 pts] - FAILED: Timed out (1000ms)
+table_parallelism . . . . . . . [13 pts] - FAILED: Timed out (1000ms)
+flipper_correctness . . . . . . [10 pts] - passed
+flipper_parallelism . . . . . . [13 pts] - passed
+shifter_correctness . . . . . . [10 pts] - passed
+shifter_parallelism . . . . . . [13 pts] - passed
+collage_layers_correctness  . . [5 pts]  - passed
+collage_layers_parallelism  . . [7 pts]  - passed
+collage_coordinates_serial  . . [5 pts]  - passed
+collage_coordinates_parallelism [7 pts]  - passed
+collage_coordinates_correctness [7 pts]  - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 77
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+table_correctness [10 points]
+Result: FAILED: Timed out (1000ms)
+Took 1000ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+table_parallelism [13 points]
+Result: FAILED: Timed out (1000ms)
+Took 1000ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 77
+

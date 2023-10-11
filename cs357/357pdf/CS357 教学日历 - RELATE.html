@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+  CS357
+  教学日历 - RELATE
+</title>
+
+    <link href="/static/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/jqueryui/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/jstree/dist/themes/default/style.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" >
+
+    
+    
+    <script src="/static/jquery/dist/jquery.js"></script>
+    <script src="/static/jqueryui/jquery-ui.js"></script>
+    <script src="/static/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/static/jstree/dist/jstree.min.js"></script>
+
+    
+
+    
+  <link rel='stylesheet' href='/static/fullcalendar/dist/fullcalendar.css' />
+  <script src='/static/moment/moment.js'></script>
+  <script src='/static/fullcalendar/dist/fullcalendar.js'></script>
+  
+  
+  <script src='/static/fullcalendar/dist/lang/zh-cn.js'></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="/static/videojs/dist/video-js/video-js.css" rel="stylesheet">
+    <script src="/static/videojs/dist/video-js/video.js"></script>
+    <script type="text/javascript">
+      videojs.options.flash.swf = "/static/videojs/dist/video-js/video-js.swf"
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="
+  
+    /course/cs357-s15/
+  
+">
+  CS357
+  Spring 2015
+</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav">
+
+            
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              <li>
+                <a href="/profile/">
+                    登录用户： pliu15@illinois.edu </a>
+              </li>
+              
+            
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  <h1>CS357 教学日历</h1>
+
+  <div id="coursecal" style="margin-top:3em"></div>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#coursecal').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          defaultDate: '2015-05-30',
+          timezone: "local",
+
+          events: [{"allDay": false, "end": "2015-09-11T23:00:00+00:00", "title": "Homework 1 due", "color": "darkcyan", "start": "2015-09-05T23:30:30+00:00", "id": 1696}, {"allDay": false, "end": "2015-05-13T21:30:00+00:00", "title": "Conflict Final 2", "color": "red", "start": "2015-05-13T20:00:00+00:00", "url": "#event-1763", "id": 1763}, {"allDay": false, "end": "2015-05-11T15:30:00+00:00", "title": "Conflict Final 1", "color": "red", "start": "2015-05-11T14:00:00+00:00", "url": "#event-1762", "id": 1762}, {"color": "darkcyan", "start": "2015-05-09T04:59:00+00:00", "allDay": false, "id": 1705, "title": "Extra Credit HW 10 due"}, {"allDay": false, "end": "2015-05-08T14:30:00+00:00", "title": "Final exam", "color": "red", "start": "2015-05-08T13:00:00+00:00", "url": "#event-1693", "id": 1693}, {"allDay": false, "end": "2015-05-08T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-05-07T23:00:00+00:00", "id": 411}, {"allDay": false, "end": "2015-05-07T23:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-05-07T22:00:00+00:00", "id": 389}, {"allDay": false, "end": "2015-05-07T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-05-07T22:00:00+00:00", "id": 118}, {"allDay": false, "end": "2015-05-07T15:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-05-07T14:30:00+00:00", "id": 1766}, {"allDay": false, "end": "2015-05-06T22:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-05-06T20:00:00+00:00", "id": 1765}, {"allDay": false, "end": "2015-05-06T00:00:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-05-05T23:00:00+00:00", "id": 1768}, {"allDay": false, "end": "2015-05-05T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-05-05T22:00:00+00:00", "id": 98}, {"allDay": false, "end": "2015-05-05T21:45:00+00:00", "title": "Lecture 27 (N)", "color": "blue", "start": "2015-05-05T20:30:00+00:00", "id": 1759}, {"allDay": false, "end": "2015-05-05T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-05-05T19:00:00+00:00", "id": 1469}, {"allDay": false, "end": "2015-05-05T18:45:00+00:00", "title": "Lecture 27 (M)", "color": "blue", "start": "2015-05-05T17:30:00+00:00", "url": "#event-1732", "id": 1732}, {"allDay": false, "end": "2015-05-05T16:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-05-05T15:30:00+00:00", "id": 1658}, {"allDay": false, "end": "2015-05-05T15:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-05-05T14:30:00+00:00", "id": 1417}, {"allDay": false, "end": "2015-05-04T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-05-04T19:00:00+00:00", "id": 630}, {"allDay": false, "end": "2015-05-04T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-05-04T15:30:00+00:00", "id": 713}, {"allDay": false, "end": "2015-05-04T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-05-04T14:30:00+00:00", "id": 755}, {"allDay": false, "end": "2015-05-01T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-05-01T15:30:00+00:00", "id": 691}, {"allDay": false, "end": "2015-05-01T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-05-01T14:30:00+00:00", "id": 733}, {"color": "darkcyan", "start": "2015-05-01T04:59:00+00:00", "allDay": false, "id": 1704, "title": "Homework 9 due"}, {"allDay": false, "end": "2015-05-01T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-30T23:00:00+00:00", "id": 410}, {"allDay": false, "end": "2015-04-30T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-30T22:00:00+00:00", "id": 117}, {"allDay": false, "end": "2015-04-30T21:45:00+00:00", "title": "Lecture 26 (N)", "color": "blue", "start": "2015-04-30T20:30:00+00:00", "id": 1758}, {"allDay": false, "end": "2015-04-30T18:45:00+00:00", "title": "Lecture 26 (M)", "color": "blue", "start": "2015-04-30T17:30:00+00:00", "url": "#event-1731", "id": 1731}, {"allDay": false, "end": "2015-04-29T22:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-04-29T21:00:00+00:00", "id": 1764}, {"allDay": false, "end": "2015-04-28T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-28T22:00:00+00:00", "id": 97}, {"allDay": false, "end": "2015-04-28T21:45:00+00:00", "title": "Lecture 25 (N)", "color": "blue", "start": "2015-04-28T20:30:00+00:00", "id": 1757}, {"allDay": false, "end": "2015-04-28T21:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-28T20:00:00+00:00", "id": 1495}, {"allDay": false, "end": "2015-04-28T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-04-28T19:00:00+00:00", "id": 1468}, {"allDay": false, "end": "2015-04-28T18:45:00+00:00", "title": "Lecture 25 (M)", "color": "blue", "start": "2015-04-28T17:30:00+00:00", "url": "#event-1730", "id": 1730}, {"allDay": false, "end": "2015-04-28T17:30:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-28T16:30:00+00:00", "id": 388}, {"allDay": false, "end": "2015-04-28T16:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-28T15:30:00+00:00", "id": 1657}, {"allDay": false, "end": "2015-04-28T15:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-28T14:30:00+00:00", "id": 1416}, {"allDay": false, "end": "2015-04-28T00:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-27T23:00:00+00:00", "id": 1761}, {"allDay": false, "end": "2015-04-27T23:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-27T22:00:00+00:00", "id": 1481}, {"allDay": false, "end": "2015-04-27T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-04-27T19:00:00+00:00", "id": 629}, {"allDay": false, "end": "2015-04-27T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-27T15:30:00+00:00", "id": 712}, {"allDay": false, "end": "2015-04-27T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-04-27T14:30:00+00:00", "id": 754}, {"allDay": false, "end": "2015-04-24T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-24T15:30:00+00:00", "id": 690}, {"allDay": false, "end": "2015-04-24T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-04-24T14:30:00+00:00", "id": 732}, {"allDay": false, "end": "2015-04-24T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-23T23:00:00+00:00", "id": 409}, {"allDay": false, "end": "2015-04-23T21:45:00+00:00", "title": "Lecture 24 (N)", "color": "blue", "start": "2015-04-23T20:30:00+00:00", "id": 1756}, {"allDay": false, "end": "2015-04-23T18:45:00+00:00", "title": "Lecture 24 (M)", "color": "blue", "start": "2015-04-23T17:30:00+00:00", "url": "#event-1729", "id": 1729}, {"color": "darkcyan", "start": "2015-04-22T04:59:00+00:00", "allDay": false, "id": 1703, "title": "Homework 8 due"}, {"allDay": false, "end": "2015-04-22T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-21T23:00:00+00:00", "id": 387}, {"allDay": false, "end": "2015-04-21T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-21T22:00:00+00:00", "id": 96}, {"allDay": false, "end": "2015-04-21T21:45:00+00:00", "title": "Lecture 23 (N)", "color": "blue", "start": "2015-04-21T20:30:00+00:00", "id": 1755}, {"allDay": false, "end": "2015-04-21T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-04-21T19:00:00+00:00", "id": 1467}, {"allDay": false, "end": "2015-04-21T18:45:00+00:00", "title": "Lecture 23 (M)", "color": "blue", "start": "2015-04-21T17:30:00+00:00", "url": "#event-1728", "id": 1728}, {"allDay": false, "end": "2015-04-21T15:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-21T14:30:00+00:00", "id": 1415}, {"allDay": false, "end": "2015-04-21T14:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-21T13:30:00+00:00", "id": 1656}, {"allDay": false, "end": "2015-04-20T23:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-20T22:00:00+00:00", "id": 1480}, {"allDay": false, "end": "2015-04-20T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-04-20T19:00:00+00:00", "id": 628}, {"allDay": false, "end": "2015-04-20T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-20T15:30:00+00:00", "id": 711}, {"allDay": false, "end": "2015-04-20T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-04-20T14:30:00+00:00", "id": 753}, {"allDay": false, "end": "2015-04-17T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-17T15:30:00+00:00", "id": 689}, {"allDay": false, "end": "2015-04-17T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-04-17T14:30:00+00:00", "id": 731}, {"allDay": false, "end": "2015-04-17T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-16T23:00:00+00:00", "id": 408}, {"allDay": false, "end": "2015-04-16T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-16T22:00:00+00:00", "id": 115}, {"allDay": false, "end": "2015-04-16T21:45:00+00:00", "title": "Lecture 22 (N)", "color": "blue", "start": "2015-04-16T20:30:00+00:00", "id": 1754}, {"allDay": false, "end": "2015-04-16T18:45:00+00:00", "title": "Lecture 22 (M)", "color": "blue", "start": "2015-04-16T17:30:00+00:00", "url": "#event-1727", "id": 1727}, {"color": "darkcyan", "start": "2015-04-15T04:59:00+00:00", "allDay": false, "id": 1702, "title": "Homework 7 due"}, {"allDay": false, "end": "2015-04-15T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-14T23:00:00+00:00", "id": 386}, {"allDay": false, "end": "2015-04-14T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-14T22:00:00+00:00", "id": 95}, {"allDay": false, "end": "2015-04-14T21:45:00+00:00", "title": "Lecture 21 (N)", "color": "blue", "start": "2015-04-14T20:30:00+00:00", "id": 1753}, {"allDay": false, "end": "2015-04-14T21:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-14T20:00:00+00:00", "id": 1493}, {"allDay": false, "end": "2015-04-14T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-04-14T19:00:00+00:00", "id": 1466}, {"allDay": false, "end": "2015-04-14T18:45:00+00:00", "title": "Lecture 21 (M)", "color": "blue", "start": "2015-04-14T17:30:00+00:00", "url": "#event-1726", "id": 1726}, {"allDay": false, "end": "2015-04-14T15:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-14T14:30:00+00:00", "id": 1414}, {"allDay": false, "end": "2015-04-14T14:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-14T13:30:00+00:00", "id": 1655}, {"allDay": false, "end": "2015-04-13T23:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-13T22:00:00+00:00", "id": 1479}, {"allDay": false, "end": "2015-04-13T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-04-13T19:00:00+00:00", "id": 627}, {"allDay": false, "end": "2015-04-13T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-13T15:30:00+00:00", "id": 710}, {"allDay": false, "end": "2015-04-10T00:45:00+00:00", "title": "Midterm exam 2", "color": "red", "start": "2015-04-09T23:30:00+00:00", "url": "#event-183", "id": 183}, {"allDay": false, "end": "2015-04-09T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-09T22:00:00+00:00", "id": 114}, {"allDay": false, "end": "2015-04-09T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-04-09T14:30:00+00:00", "id": 730}, {"allDay": false, "end": "2015-04-09T14:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-09T13:30:00+00:00", "id": 688}, {"allDay": false, "end": "2015-04-07T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-07T22:00:00+00:00", "id": 94}, {"allDay": false, "end": "2015-04-07T21:45:00+00:00", "title": "Lecture 20 (N)", "color": "blue", "start": "2015-04-07T20:30:00+00:00", "id": 1752}, {"allDay": false, "end": "2015-04-07T21:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-07T20:00:00+00:00", "id": 1492}, {"allDay": false, "end": "2015-04-07T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-04-07T19:00:00+00:00", "id": 1465}, {"allDay": false, "end": "2015-04-07T18:30:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-07T17:30:00+00:00", "id": 407}, {"allDay": false, "end": "2015-04-07T18:45:00+00:00", "title": "Lecture 20 (M)", "color": "blue", "start": "2015-04-07T17:30:00+00:00", "url": "#event-1725", "id": 1725}, {"allDay": false, "end": "2015-04-07T06:30:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-07T16:30:00+00:00", "id": 385}, {"allDay": false, "end": "2015-04-07T15:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-07T14:30:00+00:00", "id": 1413}, {"allDay": false, "end": "2015-04-07T14:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-04-07T13:30:00+00:00", "id": 1654}, {"allDay": false, "end": "2015-04-07T00:00:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-06T23:00:00+00:00", "id": 709}, {"allDay": false, "end": "2015-04-06T23:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-04-06T22:00:00+00:00", "id": 1478}, {"allDay": false, "end": "2015-04-06T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-04-06T19:00:00+00:00", "id": 626}, {"allDay": false, "end": "2015-04-06T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-04-06T14:30:00+00:00", "id": 751}, {"allDay": false, "end": "2015-04-03T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-04-03T15:30:00+00:00", "id": 687}, {"allDay": false, "end": "2015-04-03T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-04-03T14:30:00+00:00", "id": 729}, {"allDay": false, "end": "2015-04-03T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-04-02T23:00:00+00:00", "id": 406}, {"allDay": false, "end": "2015-04-02T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-04-02T22:00:00+00:00", "id": 113}, {"allDay": false, "end": "2015-04-02T21:45:00+00:00", "title": "Lecture 19 (N)", "color": "blue", "start": "2015-04-02T20:30:00+00:00", "id": 1751}, {"allDay": false, "end": "2015-04-02T18:45:00+00:00", "title": "Lecture 19 (M)", "color": "blue", "start": "2015-04-02T17:30:00+00:00", "url": "#event-1724", "id": 1724}, {"allDay": false, "end": "2015-04-01T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-03-31T23:00:00+00:00", "id": 384}, {"allDay": false, "end": "2015-03-31T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-03-31T22:00:00+00:00", "id": 93}, {"allDay": false, "end": "2015-03-31T21:45:00+00:00", "title": "Lecture 18 (N)", "color": "blue", "start": "2015-03-31T20:30:00+00:00", "id": 1750}, {"allDay": false, "end": "2015-03-31T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-03-31T19:00:00+00:00", "id": 1464}, {"allDay": false, "end": "2015-03-31T18:45:00+00:00", "title": "Lecture 18 (M)", "color": "blue", "start": "2015-03-31T17:30:00+00:00", "url": "#event-1723", "id": 1723}, {"allDay": false, "end": "2015-03-31T17:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-31T16:30:00+00:00", "id": 1653}, {"allDay": false, "end": "2015-03-31T16:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-31T15:30:00+00:00", "id": 1412}, {"allDay": false, "end": "2015-03-31T00:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-30T23:00:00+00:00", "id": 1694}, {"allDay": false, "end": "2015-03-30T23:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-30T22:00:00+00:00", "id": 1477}, {"allDay": false, "end": "2015-03-30T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-03-30T19:00:00+00:00", "id": 625}, {"allDay": false, "end": "2015-03-30T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-03-30T15:30:00+00:00", "id": 708}, {"allDay": false, "end": "2015-03-30T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-03-30T14:30:00+00:00", "id": 750}, {"start": "2015-03-21T05:00:00+00:00", "allDay": true, "end": "2015-03-30T05:00:00+00:00", "id": 123, "title": "Spring break"}, {"allDay": false, "end": "2015-03-20T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-03-20T15:30:00+00:00", "id": 685}, {"allDay": false, "end": "2015-03-20T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-03-20T14:30:00+00:00", "id": 727}, {"allDay": false, "end": "2015-03-20T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-03-19T23:00:00+00:00", "id": 404}, {"allDay": false, "end": "2015-03-19T23:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-03-19T22:00:00+00:00", "id": 111}, {"allDay": false, "end": "2015-03-19T21:45:00+00:00", "title": "Lecture 17 (N)", "color": "blue", "start": "2015-03-19T20:30:00+00:00", "id": 1749}, {"allDay": false, "end": "2015-03-19T18:45:00+00:00", "title": "Lecture 17 (M)", "color": "blue", "start": "2015-03-19T17:30:00+00:00", "url": "#event-1722", "id": 1722}, {"color": "darkcyan", "start": "2015-03-18T04:59:00+00:00", "allDay": false, "id": 1701, "title": "Homework 6 due"}, {"allDay": false, "end": "2015-03-18T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-03-17T23:00:00+00:00", "id": 382}, {"allDay": false, "end": "2015-03-17T21:45:00+00:00", "title": "Lecture 16 (N)", "color": "blue", "start": "2015-03-17T20:30:00+00:00", "id": 1748}, {"allDay": false, "end": "2015-03-17T21:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-17T20:00:00+00:00", "id": 1489}, {"allDay": false, "end": "2015-03-17T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-03-17T19:00:00+00:00", "id": 1462}, {"allDay": false, "end": "2015-03-17T18:45:00+00:00", "title": "Lecture 16 (M)", "color": "blue", "start": "2015-03-17T17:30:00+00:00", "url": "#event-1721", "id": 1721}, {"allDay": false, "end": "2015-03-17T16:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-17T15:30:00+00:00", "id": 1651}, {"allDay": false, "end": "2015-03-17T15:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-17T14:30:00+00:00", "id": 1410}, {"allDay": false, "end": "2015-03-16T23:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-16T22:00:00+00:00", "id": 1475}, {"allDay": false, "end": "2015-03-16T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-03-16T19:00:00+00:00", "id": 623}, {"allDay": false, "end": "2015-03-16T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-03-16T15:30:00+00:00", "id": 706}, {"allDay": false, "end": "2015-03-16T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-03-16T14:30:00+00:00", "id": 748}, {"allDay": false, "end": "2015-03-13T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-03-13T15:30:00+00:00", "id": 684}, {"allDay": false, "end": "2015-03-13T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-03-13T14:30:00+00:00", "id": 726}, {"allDay": false, "end": "2015-03-13T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-03-12T23:00:00+00:00", "id": 403}, {"allDay": false, "end": "2015-03-12T21:45:00+00:00", "title": "Lecture 15 (N)", "color": "blue", "start": "2015-03-12T20:30:00+00:00", "id": 1747}, {"allDay": false, "end": "2015-03-12T18:45:00+00:00", "title": "Lecture 15 (M)", "color": "blue", "start": "2015-03-12T17:30:00+00:00", "url": "#event-1720", "id": 1720}, {"color": "darkcyan", "start": "2015-03-11T04:59:00+00:00", "allDay": false, "id": 1700, "title": "Homework 5 due"}, {"allDay": false, "end": "2015-03-11T00:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-03-10T23:00:00+00:00", "id": 381}, {"allDay": false, "end": "2015-03-10T21:45:00+00:00", "title": "Lecture 14 (N)", "color": "blue", "start": "2015-03-10T20:30:00+00:00", "id": 1746}, {"allDay": false, "end": "2015-03-10T21:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-10T20:00:00+00:00", "id": 1488}, {"allDay": false, "end": "2015-03-10T21:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-03-10T19:00:00+00:00", "id": 1461}, {"allDay": false, "end": "2015-03-10T18:45:00+00:00", "title": "Lecture 14 (M)", "color": "blue", "start": "2015-03-10T17:30:00+00:00", "url": "#event-1719", "id": 1719}, {"allDay": false, "end": "2015-03-10T16:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-10T15:30:00+00:00", "id": 1650}, {"allDay": false, "end": "2015-03-10T15:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-10T14:30:00+00:00", "id": 1409}, {"allDay": false, "end": "2015-03-09T23:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-09T22:00:00+00:00", "id": 1474}, {"allDay": false, "end": "2015-03-09T20:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-03-09T19:00:00+00:00", "id": 622}, {"allDay": false, "end": "2015-03-09T16:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-03-09T15:30:00+00:00", "id": 705}, {"allDay": false, "end": "2015-03-09T15:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-03-09T14:30:00+00:00", "id": 747}, {"allDay": false, "end": "2015-03-07T00:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-06T23:00:00+00:00", "id": 1668}, {"allDay": false, "end": "2015-03-06T19:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-06T18:30:00+00:00", "id": 1408}, {"allDay": false, "end": "2015-03-06T18:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-03-06T17:30:00+00:00", "id": 1649}, {"allDay": false, "end": "2015-03-06T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-03-06T16:30:00+00:00", "id": 683}, {"allDay": false, "end": "2015-03-06T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-03-06T15:30:00+00:00", "id": 725}, {"allDay": false, "end": "2015-03-06T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-03-06T00:00:00+00:00", "id": 402}, {"allDay": false, "end": "2015-03-06T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-03-05T23:00:00+00:00", "id": 109}, {"allDay": false, "end": "2015-03-05T22:45:00+00:00", "title": "Lecture 13 (N)", "color": "blue", "start": "2015-03-05T21:30:00+00:00", "id": 1745}, {"allDay": false, "end": "2015-03-05T19:45:00+00:00", "title": "Lecture 13 (M)", "color": "blue", "start": "2015-03-05T18:30:00+00:00", "url": "#event-1718", "id": 1718}, {"color": "darkcyan", "start": "2015-03-04T05:59:00+00:00", "allDay": false, "id": 1699, "title": "Homework 4 due"}, {"allDay": false, "end": "2015-03-04T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-03-04T00:00:00+00:00", "id": 380}, {"allDay": false, "end": "2015-03-04T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-03-03T23:00:00+00:00", "id": 89}, {"allDay": false, "end": "2015-03-03T22:45:00+00:00", "title": "Lecture 12 (N)", "color": "blue", "start": "2015-03-03T21:30:00+00:00", "id": 1744}, {"allDay": false, "end": "2015-03-03T22:00:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-03-03T20:00:00+00:00", "id": 1460}, {"allDay": false, "end": "2015-03-03T19:45:00+00:00", "title": "Lecture 12 (M)", "color": "blue", "start": "2015-03-03T18:30:00+00:00", "url": "#event-1717", "id": 1717}, {"allDay": false, "end": "2015-03-03T00:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-03-02T23:00:00+00:00", "id": 1473}, {"allDay": false, "end": "2015-03-02T21:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-03-02T20:00:00+00:00", "id": 621}, {"allDay": false, "end": "2015-03-02T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-03-02T16:30:00+00:00", "id": 704}, {"allDay": false, "end": "2015-03-02T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-03-02T15:30:00+00:00", "id": 746}, {"allDay": false, "end": "2015-02-27T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-27T16:30:00+00:00", "id": 682}, {"allDay": false, "end": "2015-02-27T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-27T15:30:00+00:00", "id": 724}, {"allDay": false, "end": "2015-02-27T01:45:00+00:00", "title": "Midterm exam 1", "color": "red", "start": "2015-02-27T00:30:00+00:00", "url": "#event-182", "id": 182}, {"allDay": false, "end": "2015-02-27T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-26T23:00:00+00:00", "id": 108}, {"allDay": false, "end": "2015-02-26T23:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-26T22:00:00+00:00", "id": 401}, {"allDay": false, "end": "2015-02-25T23:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-25T22:00:00+00:00", "id": 379}, {"allDay": false, "end": "2015-02-25T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-24T23:00:00+00:00", "id": 88}, {"allDay": false, "end": "2015-02-24T22:45:00+00:00", "title": "Lecture 11 (N)", "color": "blue", "start": "2015-02-24T21:30:00+00:00", "id": 1743}, {"allDay": false, "end": "2015-02-24T22:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-02-24T21:00:00+00:00", "id": 1486}, {"allDay": false, "end": "2015-02-24T22:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-02-24T20:30:00+00:00", "id": 1459}, {"allDay": false, "end": "2015-02-24T19:45:00+00:00", "title": "Lecture 11 (M)", "color": "blue", "start": "2015-02-24T18:30:00+00:00", "url": "#event-1716", "id": 1716}, {"allDay": false, "end": "2015-02-24T17:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-02-24T16:30:00+00:00", "id": 1648}, {"allDay": false, "end": "2015-02-24T16:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-02-24T15:30:00+00:00", "id": 1407}, {"allDay": false, "end": "2015-02-24T00:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-02-23T23:00:00+00:00", "id": 1472}, {"allDay": false, "end": "2015-02-23T21:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-02-23T20:00:00+00:00", "id": 620}, {"allDay": false, "end": "2015-02-23T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-23T16:30:00+00:00", "id": 703}, {"allDay": false, "end": "2015-02-23T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-23T15:30:00+00:00", "id": 745}, {"allDay": false, "end": "2015-02-20T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-20T16:30:00+00:00", "id": 681}, {"allDay": false, "end": "2015-02-20T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-20T15:30:00+00:00", "id": 723}, {"allDay": false, "end": "2015-02-20T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-20T00:00:00+00:00", "id": 400}, {"allDay": false, "end": "2015-02-20T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-19T23:00:00+00:00", "id": 107}, {"allDay": false, "end": "2015-02-19T22:45:00+00:00", "title": "Lecture 10 (N)", "color": "blue", "start": "2015-02-19T21:30:00+00:00", "id": 1742}, {"allDay": false, "end": "2015-02-19T19:45:00+00:00", "title": "Lecture 10 (M)", "color": "blue", "start": "2015-02-19T18:30:00+00:00", "url": "#event-1715", "id": 1715}, {"color": "darkcyan", "start": "2015-02-18T05:59:00+00:00", "allDay": false, "id": 1698, "title": "Homework 3 due"}, {"allDay": false, "end": "2015-02-18T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-18T00:00:00+00:00", "id": 378}, {"allDay": false, "end": "2015-02-18T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-17T23:00:00+00:00", "id": 87}, {"allDay": false, "end": "2015-02-17T22:45:00+00:00", "title": "Lecture 9 (N)", "color": "blue", "start": "2015-02-17T21:30:00+00:00", "id": 1741}, {"allDay": false, "end": "2015-02-17T22:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-02-17T21:00:00+00:00", "id": 1485}, {"allDay": false, "end": "2015-02-17T22:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-02-17T20:30:00+00:00", "id": 1458}, {"allDay": false, "end": "2015-02-17T19:45:00+00:00", "title": "Lecture 9 (M)", "color": "blue", "start": "2015-02-17T18:30:00+00:00", "url": "#event-1714", "id": 1714}, {"allDay": false, "end": "2015-02-17T16:00:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-02-17T15:00:00+00:00", "id": 1406}, {"allDay": false, "end": "2015-02-17T00:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-02-16T23:00:00+00:00", "id": 1471}, {"allDay": false, "end": "2015-02-16T21:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-02-16T20:00:00+00:00", "id": 619}, {"allDay": false, "end": "2015-02-16T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-16T16:30:00+00:00", "id": 702}, {"allDay": false, "end": "2015-02-16T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-16T15:30:00+00:00", "id": 744}, {"allDay": false, "end": "2015-02-13T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-13T16:30:00+00:00", "id": 680}, {"allDay": false, "end": "2015-02-13T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-13T15:30:00+00:00", "id": 722}, {"allDay": false, "end": "2015-02-13T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-13T00:00:00+00:00", "id": 399}, {"allDay": false, "end": "2015-02-13T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-12T23:00:00+00:00", "id": 106}, {"allDay": false, "end": "2015-02-12T22:45:00+00:00", "title": "Lecture 8 (N)", "color": "blue", "start": "2015-02-12T21:30:00+00:00", "id": 1740}, {"allDay": false, "end": "2015-02-12T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-02-12T20:30:00+00:00", "id": 357}, {"allDay": false, "end": "2015-02-12T19:45:00+00:00", "title": "Lecture 8 (M)", "color": "blue", "start": "2015-02-12T18:30:00+00:00", "url": "#event-1713", "id": 1713}, {"color": "darkcyan", "start": "2015-02-11T05:59:00+00:00", "allDay": false, "id": 1697, "title": "Homework 2 due"}, {"allDay": false, "end": "2015-02-11T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-11T00:00:00+00:00", "id": 377}, {"allDay": false, "end": "2015-02-11T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-10T23:00:00+00:00", "id": 86}, {"allDay": false, "end": "2015-02-10T22:45:00+00:00", "title": "Lecture 7 (N)", "color": "blue", "start": "2015-02-10T21:30:00+00:00", "id": 1739}, {"allDay": false, "end": "2015-02-10T22:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-02-10T21:00:00+00:00", "id": 1484}, {"allDay": false, "end": "2015-02-10T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-02-10T20:30:00+00:00", "id": 335}, {"allDay": false, "end": "2015-02-10T19:45:00+00:00", "title": "Lecture 7 (M)", "color": "blue", "start": "2015-02-10T18:30:00+00:00", "url": "#event-1712", "id": 1712}, {"allDay": false, "end": "2015-02-10T16:30:00+00:00", "title": "Office Hours Qi", "color": "green", "start": "2015-02-10T15:30:00+00:00", "id": 1405}, {"allDay": false, "end": "2015-02-10T00:00:00+00:00", "title": "Office Hours Shelley", "color": "green", "start": "2015-02-09T23:00:00+00:00", "id": 1470}, {"allDay": false, "end": "2015-02-09T21:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-02-09T20:00:00+00:00", "id": 618}, {"allDay": false, "end": "2015-02-09T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-09T16:30:00+00:00", "id": 701}, {"allDay": false, "end": "2015-02-09T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-09T15:30:00+00:00", "id": 743}, {"allDay": false, "end": "2015-02-06T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-06T16:30:00+00:00", "id": 679}, {"allDay": false, "end": "2015-02-06T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-06T15:30:00+00:00", "id": 721}, {"allDay": false, "end": "2015-02-06T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-06T00:00:00+00:00", "id": 398}, {"allDay": false, "end": "2015-02-06T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-05T23:00:00+00:00", "id": 105}, {"allDay": false, "end": "2015-02-05T22:45:00+00:00", "title": "Lecture 6 (N)", "color": "blue", "start": "2015-02-05T21:30:00+00:00", "id": 1738}, {"allDay": false, "end": "2015-02-05T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-02-05T20:30:00+00:00", "id": 356}, {"allDay": false, "end": "2015-02-05T19:45:00+00:00", "title": "Lecture 6 (M)", "color": "blue", "start": "2015-02-05T18:30:00+00:00", "url": "#event-1711", "id": 1711}, {"allDay": false, "end": "2015-02-04T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-02-04T00:00:00+00:00", "id": 376}, {"allDay": false, "end": "2015-02-04T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-02-03T23:00:00+00:00", "id": 85}, {"allDay": false, "end": "2015-02-03T22:45:00+00:00", "title": "Lecture 5 (N)", "color": "blue", "start": "2015-02-03T21:30:00+00:00", "url": "#event-1737", "id": 1737}, {"allDay": false, "end": "2015-02-03T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-02-03T20:30:00+00:00", "id": 334}, {"allDay": false, "end": "2015-02-03T19:45:00+00:00", "title": "Lecture 5 (M)", "color": "blue", "start": "2015-02-03T18:30:00+00:00", "url": "#event-1710", "id": 1710}, {"allDay": false, "end": "2015-02-02T21:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-02-02T20:00:00+00:00", "id": 617}, {"allDay": false, "end": "2015-02-02T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-02-02T16:30:00+00:00", "id": 700}, {"allDay": false, "end": "2015-02-02T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-02-02T15:30:00+00:00", "id": 742}, {"allDay": false, "end": "2015-01-30T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-01-30T16:30:00+00:00", "id": 678}, {"allDay": false, "end": "2015-01-30T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-01-30T15:30:00+00:00", "id": 720}, {"allDay": false, "end": "2015-01-30T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-01-30T00:00:00+00:00", "id": 397}, {"allDay": false, "end": "2015-01-30T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-01-29T23:00:00+00:00", "id": 104}, {"allDay": false, "end": "2015-01-29T22:45:00+00:00", "title": "Lecture 4 (N)", "color": "blue", "start": "2015-01-29T21:30:00+00:00", "url": "#event-1736", "id": 1736}, {"allDay": false, "end": "2015-01-29T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-01-29T20:30:00+00:00", "id": 355}, {"allDay": false, "end": "2015-01-29T19:45:00+00:00", "title": "Lecture 4 (M)", "color": "blue", "start": "2015-01-29T18:30:00+00:00", "url": "#event-1709", "id": 1709}, {"color": "darkcyan", "start": "2015-01-28T05:59:00+00:00", "allDay": false, "id": 1695, "title": "Homework 0 due"}, {"allDay": false, "end": "2015-01-28T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-01-28T00:00:00+00:00", "id": 375}, {"allDay": false, "end": "2015-01-28T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-01-27T23:00:00+00:00", "id": 84}, {"allDay": false, "end": "2015-01-27T22:45:00+00:00", "title": "Lecture 3 (N)", "color": "blue", "start": "2015-01-27T21:30:00+00:00", "url": "#event-1735", "id": 1735}, {"allDay": false, "end": "2015-01-27T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-01-27T20:30:00+00:00", "id": 333}, {"allDay": false, "end": "2015-01-27T19:45:00+00:00", "title": "Lecture 3 (M)", "color": "blue", "start": "2015-01-27T18:30:00+00:00", "url": "#event-1708", "id": 1708}, {"allDay": false, "end": "2015-01-26T21:00:00+00:00", "title": "Office Hours Eric", "color": "green", "start": "2015-01-26T20:00:00+00:00", "id": 616}, {"allDay": false, "end": "2015-01-26T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-01-26T16:30:00+00:00", "id": 699}, {"allDay": false, "end": "2015-01-26T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-01-26T15:30:00+00:00", "id": 741}, {"allDay": false, "end": "2015-01-23T17:30:00+00:00", "title": "Office Hours Arun", "color": "green", "start": "2015-01-23T16:30:00+00:00", "id": 677}, {"allDay": false, "end": "2015-01-23T16:30:00+00:00", "title": "Office Hours Karthik", "color": "green", "start": "2015-01-23T15:30:00+00:00", "id": 719}, {"allDay": false, "end": "2015-01-23T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-01-23T00:00:00+00:00", "id": 396}, {"allDay": false, "end": "2015-01-23T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-01-22T23:00:00+00:00", "id": 103}, {"allDay": false, "end": "2015-01-22T22:45:00+00:00", "title": "Lecture 2 (N)", "color": "blue", "start": "2015-01-22T21:30:00+00:00", "url": "#event-1734", "id": 1734}, {"allDay": false, "end": "2015-01-22T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-01-22T20:30:00+00:00", "id": 354}, {"allDay": false, "end": "2015-01-22T19:45:00+00:00", "title": "Lecture 2 (M)", "color": "blue", "start": "2015-01-22T18:30:00+00:00", "url": "#event-1707", "id": 1707}, {"allDay": false, "end": "2015-01-21T01:00:00+00:00", "title": "Office Hours Prateek", "color": "green", "start": "2015-01-21T00:00:00+00:00", "id": 374}, {"allDay": false, "end": "2015-01-21T00:00:00+00:00", "title": "Office Hours Andreas", "color": "green", "start": "2015-01-20T23:00:00+00:00", "id": 83}, {"allDay": false, "end": "2015-01-20T22:45:00+00:00", "title": "Lecture 1 (N)", "color": "blue", "start": "2015-01-20T21:30:00+00:00", "url": "#event-1733", "id": 1733}, {"allDay": false, "end": "2015-01-20T21:30:00+00:00", "title": "Office Hours Ryne", "color": "green", "start": "2015-01-20T20:30:00+00:00", "id": 332}, {"allDay": false, "end": "2015-01-20T19:45:00+00:00", "title": "Lecture 1 (M)", "color": "blue", "start": "2015-01-20T18:30:00+00:00", "url": "#event-1706", "id": 1706}, {"start": "2015-01-19T06:00:00+00:00", "allDay": true, "id": 82, "title": "MLK Day"}]
+        })
+    });
+  </script>
+
+<b>注释:</b> 一些日历的条目是可点击的, 且与其下方的输入内容相链接. 
+
+  <div style="margin-top:3ex">
+  
+    <div id="event-1763" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Conflict Final 2</b>
+        (2015年5月13日 15:00 - 2015年5月13日 16:30)
+      </div>
+      <div class="panel-body">
+        <p>Starts at 3:00pm <em>sharp</em> in 4403 Siebel.</p>
+<p><i class="fa fa-exclamation-triangle"></i> To take a conflict final, you must
+request permission by email to Andreas or Eric. Just showing up or having filled
+out the Doodle poll is not enough. When emailing, please provide the reason why
+you are requesting to take the conflict exam.</p>
+      </div>
+    </div>
+  
+    <div id="event-1762" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Conflict Final 1</b>
+        (2015年5月11日 09:00 - 2015年5月11日 10:30)
+      </div>
+      <div class="panel-body">
+        <p>Starts at 9:00am <em>sharp</em> in the Education Building, room 2.</p>
+<p>Note that our
+<a href="https://fms.registrar.illinois.edu/FinalExams?Subj=CS&amp;Course=357">official time slot</a>
+starts at 8am, but since the exam is only 90 minutes long, we'll start a little later.</p>
+<p><i class="fa fa-exclamation-triangle"></i> To take a conflict final, you must
+request permission by email to Andreas or Eric. Just showing up or having filled
+out the Doodle poll is not enough. When emailing, please provide the reason why
+you are requesting to take the conflict exam.</p>
+      </div>
+    </div>
+  
+    <div id="event-1693" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Final exam</b>
+        (2015年5月8日 08:00 - 2015年5月8日 09:30)
+      </div>
+      <div class="panel-body">
+        <p>Starts at 8:00am <em>sharp</em>. Please be on time.</p>
+<p>The exam will take place in Lincoln Hall Theater for both sections
+together.</p>
+<p><a href="/course/cs357-s15/flow/practice-final/start/">Practice exam</a></p>
+      </div>
+    </div>
+  
+    <div id="event-1732" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 27 (M)</b>
+        (2015年5月5日 12:30 - 2015年5月5日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-floating-point/start/">Floating Point</a> (<a href="/course/cs357-s15/flow/quiz-floating-point/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-floating-point/start/">Floating Point</a></p>
+<ul>
+<li>Constrained Optimization in practice</li>
+<li>Floating Point arithmetic</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/13-floating-point.pdf">Notes Section 13</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1731" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 26 (M)</b>
+        (2015年4月30日 12:30 - 2015年4月30日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-constrained-optimization/start/">Constrained Optimization</a> (<a href="/course/cs357-s15/flow/quiz-constrained-optimization/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-optimization/start/">Optimization</a></p>
+<ul>
+<li>Golden Section Search</li>
+<li>Steepest Descent</li>
+<li>Newton's method in $n$ dimensions</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/12-optimization.pdf">Notes Section 12</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1730" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 25 (M)</b>
+        (2015年4月28日 12:30 - 2015年4月28日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-optimization/start/">Optimization</a> (<a href="/course/cs357-s15/flow/quiz-optimization/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-secant/start/">Nonlinear equations</a></p>
+<ul>
+<li>Nonlinear equations in practice</li>
+<li>Intro to Optimization</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/12-optimization.pdf">Notes Section 12</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1729" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 24 (M)</b>
+        (2015年4月23日 12:30 - 2015年4月23日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> (no video) (<a href="/course/cs357-s15/flow/quiz-differentiation/start/">Review Quiz</a>) (for credit)</p>
+<ul>
+<li>Solving nonlinear equations</li>
+<li>Bisection Method</li>
+<li>Convergence order</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/11-nonlinear-equations.pdf">Notes Section 11</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1728" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 23 (M)</b>
+        (2015年4月21日 12:30 - 2015年4月21日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-newton/start/">Newton's method</a> (<a href="/course/cs357-s15/flow/quiz-newton/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-integration/start/">Numerical Integration</a></p>
+<ul>
+<li>Finite Differences</li>
+<li>Calculus with interpolants: Integration</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/10-function-spaces.pdf">Notes Section 10</a></li>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/11-nonlinear-equations.pdf">Notes Section 11</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1727" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 22 (M)</b>
+        (2015年4月16日 12:30 - 2015年4月16日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-convergence-order/start/">Rate and Order of Convergence</a> (<a href="/course/cs357-s15/flow/quiz-convergence-order/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-differentiation/start/">Numerical Differentiation</a></p>
+<ul>
+<li>Fourier Interpolation</li>
+<li>Calculus with interpolants: Differentiation</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/10-function-spaces.pdf">Notes Section 10</a></li>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/11-nonlinear-equations.pdf">Notes Section 11</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1726" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 21 (M)</b>
+        (2015年4月14日 12:30 - 2015年4月14日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-fourier/start/">Fourier</a> (<a href="/course/cs357-s15/flow/quiz-fourier/start/">Quiz</a>)</p>
+<ul>
+<li>Piecewise Interpolation</li>
+<li>Fourier Interpolation</li>
+<li>Interpolation with Radial Basis Functions ("RBFs")</li>
+<li>Calculus with interpolants</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/10-function-spaces.pdf">Notes Section 10</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-183" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Midterm exam 2</b>
+        (2015年4月9日 18:30 - 2015年4月9日 19:45)
+      </div>
+      <div class="panel-body">
+        <p>Starts at 6:30pm <em>sharp</em>. Please be on time.</p>
+<ul>
+<li>If you are in Section M, please go to 1320 DCL.</li>
+<li>If you are in Section N, please go to 1404 Siebel.</li>
+</ul>
+<p><a href="/course/cs357-s15/flow/practice-exam-2/start/">Practice exam</a></p>
+      </div>
+    </div>
+  
+    <div id="event-1725" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 20 (M)</b>
+        (2015年4月7日 12:30 - 2015年4月7日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-interpolation-error/start/">Interpolation Error</a> (<a href="/course/cs357-s15/flow/quiz-interpolation-error/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-interpolation-2/start/">Interpolation: Error and Piecewise</a></p>
+<ul>
+<li>Interpolation Error</li>
+<li>Interpolation Node Choice</li>
+<li>Piecewise Polynomial Interpolation</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/10-function-spaces.pdf">Notes Section 10</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1724" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 19 (M)</b>
+        (2015年4月2日 12:30 - 2015年4月2日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-interpolation/start/">Interpolation</a> (<a href="/course/cs357-s15/flow/quiz-interpolation/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-interpolation/start/">Interpolation</a></p>
+<ul>
+<li>Principal Component Analysis</li>
+<li>Least Squares Problems using the SVD</li>
+<li>Interpolation</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/10-function-spaces.pdf">Notes Section 10</a></li>
+<li>Klein, Section 10.4</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1723" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 18 (M)</b>
+        (2015年3月31日 12:30 - 2015年3月31日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-svd-least-squares/start/">Least Squares using the SVD</a> (<a href="/course/cs357-s15/flow/quiz-svd-least-squares/start/">Quiz</a>)</p>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-svd-app/start/">SVD Applications</a></p>
+<ul>
+<li>Applications of the SVD</li>
+<li>Low-rank approximation</li>
+<li>Principal Component Analysis</li>
+<li>Least Squares Problems</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/09-svd-applications.pdf">Notes Section 9</a></li>
+<li>Klein, Chapter 11</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1722" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 17 (M)</b>
+        (2015年3月19日 12:30 - 2015年3月19日 13:45)
+      </div>
+      <div class="panel-body">
+        <p>(no pre-lecture for today)</p>
+<ul>
+<li>Markov chains</li>
+<li>Singular Value Decomposition (SVD)</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-svd/start/">SVD</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/08-svd.pdf">Notes Section 8</a></li>
+<li>Klein, Chapter 11</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1721" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 16 (M)</b>
+        (2015年3月17日 12:30 - 2015年3月17日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-svd/start/">SVD</a> (<a href="/course/cs357-s15/flow/quiz-svd/start/">Quiz</a>)</p>
+<ul>
+<li>Power iteration and its variants (inverse iteration, Rayleigh quotient iteration)</li>
+<li>Orthogonal Iteration</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/08-svd.pdf">Notes Section 8</a></li>
+<li>Klein, Chapter 11</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1720" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 15 (M)</b>
+        (2015年3月12日 12:30 - 2015年3月12日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-power-iteration/start/">Power iteration</a> (<a href="/course/cs357-s15/flow/quiz-power-iteration/start/">Quiz</a>)</p>
+<ul>
+<li>Eigenvalue transformations</li>
+<li>Rayleigh quotient</li>
+<li>Power iteration and its variants (inverse iteration, Rayleigh quotient iteration)</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-eigen/start/">Eigenvalues</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/07-eigenvalues.pdf">Notes Section 7</a></li>
+<li>Klein, Chapter 12</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1719" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 14 (M)</b>
+        (2015年3月10日 12:30 - 2015年3月10日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-eigenvalues/start/">Eigenvalues</a> (<a href="/course/cs357-s15/flow/quiz-eigenvalues/start/">Quiz</a>)</p>
+<ul>
+<li>Least squares using QR</li>
+<li>Data fitting</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-least-squares/start/">Least squares</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/06-qr-applications.pdf">Notes Section 6</a></li>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/07-eigenvalues.pdf">Notes Section 7</a></li>
+<li>Klein, Chapter 12</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1718" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 13 (M)</b>
+        (2015年3月5日 12:30 - 2015年3月5日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-qr/start/">QR factorization</a> (<a href="/course/cs357-s15/flow/quiz-qr/start/">Quiz</a></p>
+<ul>
+<li>QR factorization: Construction, properties</li>
+<li>Applications of QR</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-qr/start/">QR</a> (<a href="/course/cs357-s15/flow/inclass-qr-discussion/start/">Discussion</a>)</p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/05-orthogonality.pdf">Notes Section 5</a></li>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/06-qr-applications.pdf">Notes Section 6</a></li>
+<li>Klein, Chapters 8/9</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1717" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 12 (M)</b>
+        (2015年3月3日 12:30 - 2015年3月3日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-gram-schmidt/start/">Gram-Schmidt process, original and 'modified'</a> (<a href="/course/cs357-s15/flow/quiz-gram-schmidt/start/">Quiz</a>)</p>
+<ul>
+<li>Projections</li>
+<li>Gram-Schmidt ('original' and 'modified')</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-projection/start/">Projection</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/05-orthogonality.pdf">Notes Section 5</a></li>
+<li>Klein, Chapters 8/9</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-182" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Midterm exam 1</b>
+        (2015年2月26日 18:30 - 2015年2月26日 19:45)
+      </div>
+      <div class="panel-body">
+        <p>Starts at 6:30pm <em>sharp</em>. Please be on time.</p>
+<ul>
+<li>If you are in Section M, please go to 1320 DCL.</li>
+<li>If you are in Section N, please go to 1404 Siebel.</li>
+</ul>
+<p><a href="/course/cs357-s15/flow/practice-exam-1/start/">Practice exam</a></p>
+      </div>
+    </div>
+  
+    <div id="event-1716" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 11 (M)</b>
+        (2015年2月24日 12:30 - 2015年2月24日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-orthogonalization/start/">Orthogonalization</a> (<a href="/course/cs357-s15/flow/quiz-orthogonalization/start/">Quiz</a>)</p>
+<ul>
+<li>Orthogonal vectors</li>
+<li>Point-normal form</li>
+<li>Orthogonal matrices</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-gram-schmidt/start/">Gram-Schmidt</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/05-orthogonality.pdf">Notes Section 5</a></li>
+<li>Klein, Chapters 8/9</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1715" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 10 (M)</b>
+        (2015年2月19日 12:30 - 2015年2月19日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-inner-product/start/">Inner Products</a> (<a href="/course/cs357-s15/flow/quiz-inner-product/start/">Quiz</a>)</p>
+<ul>
+<li>Applications of LU</li>
+<li>Orthogonality</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-lu-applications/start/">LU Applications</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/04-lu-applications.pdf">Notes Section 4</a></li>
+<li>Klein, Chapters 8/9</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1714" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 9 (M)</b>
+        (2015年2月17日 12:30 - 2015年2月17日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-find-nullspace/start/">Finding Nullspaces</a> (<a href="/course/cs357-s15/flow/quiz-find-nullspace/start/">Quiz</a>)
+(<strong>UPDATED</strong> Feb 22)</p>
+<ul>
+<li>Pivoted LU review, non-square LU</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-pivoting/start/">Pivoting</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/03-lu.pdf">Notes Section 3</a></li>
+<li>Klein, Chapters 7</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1713" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 8 (M)</b>
+        (2015年2月12日 12:30 - 2015年2月12日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-computational-cost/start/">Computational Cost and Big-O Notation</a> (<a href="/course/cs357-s15/flow/quiz-computational-cost/start/">Quiz</a>)</p>
+<ul>
+<li>LU factorization</li>
+<li>Pivoting</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-lu2/start/">LU (part 2)</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/03-lu.pdf">Notes Section 3</a></li>
+<li>Klein, Chapter 7</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1712" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 7 (M)</b>
+        (2015年2月10日 12:30 - 2015年2月10日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-lu/start/">LU</a> (<a href="/course/cs357-s15/flow/quiz-lu/start/">Quiz</a>)</p>
+<ul>
+<li>Forward/Backward Substitution</li>
+<li>Elimination Matrices</li>
+<li>LU factorization</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-lu/start/">LU</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/03-lu.pdf">Notes Section 3</a></li>
+<li>Klein, Chapter 7</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1711" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 6 (M)</b>
+        (2015年2月5日 12:30 - 2015年2月5日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-elim-matrices/start/">Elimination matrices</a> (<a href="/course/cs357-s15/flow/quiz-elim-matrices/start/">Quiz</a>)</p>
+<ul>
+<li>Matrix Norms</li>
+<li>Condition number</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-matrix-norms/start/">Matrix norms</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/02-norms.pdf">Notes Section 2</a></li>
+<li><a href="http://faculty.nps.edu/rgera/MA3042/2009/ch7.4.pdf">Norm and Condition Number</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1737" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 5 (N)</b>
+        (2015年2月3日 15:30 - 2015年2月3日 16:45)
+      </div>
+      <div class="panel-body">
+        <p>See Lecture 5 for Section M.</p>
+      </div>
+    </div>
+  
+    <div id="event-1710" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 5 (M)</b>
+        (2015年2月3日 12:30 - 2015年2月3日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-matrix-norms/start/">Matrix Norms</a> (<a href="/course/cs357-s15/flow/quiz-matrix-norms/start/">Quiz</a>)</p>
+<ul>
+<li>Vector Norms</li>
+<li>Relative/absolute error</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-norms/start/">Norms</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="http://andreask.cs.illinois.edu/cs357-s15/public/notes/02-norms.pdf">Notes Section 2</a></li>
+<li><a href="http://faculty.nps.edu/rgera/MA3042/2009/ch7.4.pdf">Norm and Condition Number</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1736" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 4 (N)</b>
+        (2015年1月29日 15:30 - 2015年1月29日 16:45)
+      </div>
+      <div class="panel-body">
+        <p>See Lecture 4 for Section M.</p>
+      </div>
+    </div>
+  
+    <div id="event-1709" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 4 (M)</b>
+        (2015年1月29日 12:30 - 2015年1月29日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/prelec-norms/start/">Norms</a> (<a href="/course/cs357-s15/flow/quiz-norms/start/">Quiz</a>)</p>
+<ul>
+<li>Computational Linear Algebra</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-comp-linalg/start/">Computational Linear Algebra</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li>Klein textbook, chapters 1-5 contain what you should <em>already</em> know about linear algebra</li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1735" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 3 (N)</b>
+        (2015年1月27日 15:30 - 2015年1月27日 16:45)
+      </div>
+      <div class="panel-body">
+        <p>See Lecture 3 for Section M.</p>
+      </div>
+    </div>
+  
+    <div id="event-1708" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 3 (M)</b>
+        (2015年1月27日 12:30 - 2015年1月27日 13:45)
+      </div>
+      <div class="panel-body">
+        <ul>
+<li>Numpy intro: broadcasting</li>
+</ul>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="https://scipy-lectures.github.io/">Scipy lectures, Section 1.3</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1734" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 2 (N)</b>
+        (2015年1月22日 15:30 - 2015年1月22日 16:45)
+      </div>
+      <div class="panel-body">
+        <p>See Lecture 2 for Section M.</p>
+      </div>
+    </div>
+  
+    <div id="event-1707" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 2 (M)</b>
+        (2015年1月22日 12:30 - 2015年1月22日 13:45)
+      </div>
+      <div class="panel-body">
+        <p><em>Pre-lecture material:</em> <a href="/course/cs357-s15/flow/linalg-review-guide/start/">Linear algebra review guide</a> (<a href="/course/cs357-s15/flow/quiz-linear-algebra/start/">Quiz</a>)</p>
+<ul>
+<li>Numpy intro</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-numpy/start/">numpy</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li><a href="https://scipy-lectures.github.io/">Scipy lectures, Section 1.3</a></li>
+</ul>
+      </div>
+    </div>
+  
+    <div id="event-1733" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 1 (N)</b>
+        (2015年1月20日 15:30 - 2015年1月20日 16:45)
+      </div>
+      <div class="panel-body">
+        <p>See Lecture 1 for Section M.</p>
+      </div>
+    </div>
+  
+    <div id="event-1706" class="panel panel-default relate-calendar-event">
+      <div class="panel-heading">
+        <b>Lecture 1 (M)</b>
+        (2015年1月20日 12:30 - 2015年1月20日 13:45)
+      </div>
+      <div class="panel-body">
+        <ul>
+<li>What is Scientific Computing?</li>
+<li>Python intro</li>
+</ul>
+<p><em>In-class work:</em> <a href="/course/cs357-s15/flow/inclass-solve-complexity/start/">Complexity of linear system solve</a></p>
+<p><em>Readings:</em></p>
+<ul>
+<li>Klein textbook, chapters 1-5 contain what you should <em>already</em> know about linear algebra</li>
+<li><a href="https://scipy-lectures.github.io/">Scipy lectures, Section 1.2</a></li>
+</ul>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+    </div>
+    
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript"
+      src="/static/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/boldsymbol.js"],
+        messageStyle: "none",
+        // jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+      });
+    </script>
+  </body>
+</html>

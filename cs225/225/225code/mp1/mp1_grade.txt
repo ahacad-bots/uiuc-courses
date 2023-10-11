@@ -1,0 +1,7 @@
+Monad Autograder
+Testing mp1 at 2013-09-03 00:26:05
+
+"(reading a password) Uppercase 0... [...] Lowercase 0..." ~ Sean Massung
+
+Setting up test environment...
+Error: /dev/shm/geigle1/monad/fa13-cs225/cwang100/mp1/Makefile does not exist.

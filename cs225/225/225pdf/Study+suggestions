@@ -1,0 +1,788 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html >
+<head>
+    <title>Study suggestions - CS 225 -&nbsp;University of Illinois - Engineering Wiki</title>
+
+        
+
+                        
+    
+                        
+    
+
+    
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use AJS.Confluence.getContextPath() -->
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta name="ajs-context-path" content="">
+<meta name="ajs-build-number" content="2042">
+<meta id="atlassian-token" name="atlassian-token" content="c99ffac6e1776b2da19e7e8f0e32edf26d19186a">
+<meta id="confluence-space-key" name="confluence-space-key" content="cs225">
+<meta name="ajs-remote-user" content="">
+<meta name="ajs-static-resource-url-prefix" content="/s/2042/16/_">
+
+<meta name="Generator" content="Adaptavist Theme Builder 4.2.2">
+    <meta name="DESCRIPTION" content="Studying for the final:  # make a list of all of our data structures.  # make sure you understand the basic function of each (is it a special purpose structure or a dictionary)?  # make sure you understand the implementation issues for each (why is it ok to store a heap ... ">
+    
+<script type="text/javascript">
+    // Deprecated global variables. To be removed in a future version of Confluence.
+    var contextPath = '';
+</script>
+
+    
+
+    <!-- include system css resources -->
+    <link type="text/css" rel="stylesheet" href="/s/2042/16/18/_/download/superbatch/css/batch.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/2042/16/18/_/download/superbatch/css/batch.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/2042/16/18/_/download/superbatch/css/batch.css?media=print" media="print">
+<link type="text/css" rel="stylesheet" href="/s/2042/16/1.0/_/download/batch/confluence.web.resources:view-comment/confluence.web.resources:view-comment.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/2042/16/1.0/_/download/batch/confluence.web.resources:view-comment/confluence.web.resources:view-comment.css?ieonly=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/2042/16/1.12.4/_/download/batch/confluence.macros.advanced:fancy-box/confluence.macros.advanced:fancy-box.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/2042/16/1.0.8/_/download/batch/com.atlassian.confluence.plugins.drag-and-drop:support/com.atlassian.confluence.plugins.drag-and-drop:support.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/2042/16/0.7/_/download/batch/com.atlassian.plugins.shortcuts.atlassian-shortcuts-module:shortcuts/com.atlassian.plugins.shortcuts.atlassian-shortcuts-module:shortcuts.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/2042/16/3.4.9/_/download/batch/com.atlassian.confluence.keyboardshortcuts:confluence-keyboard-shortcuts/com.atlassian.confluence.keyboardshortcuts:confluence-keyboard-shortcuts.css" media="all">
+
+    <!-- end system css resources -->
+
+            <link rel="stylesheet" href="/s/2042/16/4/_/styles/combined.css?spaceKey=cs225" type="text/css">
+    
+                    <link rel="stylesheet" type="text/css" href="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/hmenu/src/skin-longhorn.css">
+        <script type="text/javascript">
+        var _dynarch_menu_url = "/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/hmenu/src/";
+        document.write("<style>.menulist {display:none;}<\/style>");
+    </script>
+
+<link rel="stylesheet" type="text/css" href="/plugins/builder/layout-resources.action?layoutId=CS225&amp;key=cs225&amp;resource=combinedcss&amp;hash=1328035222385s2042164_">
+<link rel="stylesheet" type="text/css" href="/plugins/builder/layout-resources.action?layoutId=CS225&amp;key=cs225&amp;resource=importcss&amp;hash=1328035222385s2042164_">
+
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+    <meta name="robots" content="NOYDIR,NOODP">
+    <meta name="confluence-request-time" content="1367386667428">
+
+<meta name="loggedInUsername" content="">
+            <meta name="ajs-keyboardshortcut-hash" content="df473bdf45ffff640206c71d3f866aaf">
+    <!-- Deprecated since 3.4. To be removed in a future version of Confluence; use atl.header -->
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+    
+        <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/s/2042/16/_/images/logo/confluence_16.png">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="Search CS 225 on University of Illinois - Engineering Wiki" href="https://wiki.engr.illinois.edu/plugins/builder/layout-resources.action?layoutId=CS225&amp;key=cs225&amp;resource=opensearch&amp;hash=1328035222385">
+
+
+<style type="text/css">
+    .atb-sidebar.expanded {display:run-in;}
+    .atb-sidebar.collapsed {display:none;visibility:collapse;}
+</style>
+
+
+        <!-- include system javascript resources -->
+                        
+    
+    <script type="text/javascript" src="/s/2042/16/18/_/download/superbatch/js/batch.js" ></script>
+<script type="text/javascript" src="/s/2042/16/1.12.4/_/download/batch/confluence.macros.advanced:fancy-box/confluence.macros.advanced:fancy-box.js" ></script>
+<script type="text/javascript" src="/s/2042/16/1.12.4/_/download/batch/confluence.macros.advanced:thumbnail-images/confluence.macros.advanced:thumbnail-images.js" ></script>
+<script type="text/javascript" src="/s/2042/16/1.0.8/_/download/batch/com.atlassian.confluence.plugins.drag-and-drop:support/com.atlassian.confluence.plugins.drag-and-drop:support.js" ></script>
+<script type="text/javascript" src="/s/2042/16/1.0.8/_/download/batch/com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-view-content/com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-view-content.js" ></script>
+<script type="text/javascript" src="/s/2042/16/1.6/_/download/batch/com.atlassian.confluence.plugins.doctheme:splitter/com.atlassian.confluence.plugins.doctheme:splitter.js" ></script>
+<script type="text/javascript" src="/s/2042/16/0.7/_/download/batch/com.atlassian.plugins.shortcuts.atlassian-shortcuts-module:shortcuts/com.atlassian.plugins.shortcuts.atlassian-shortcuts-module:shortcuts.js" ></script>
+<script type="text/javascript" src="/s/2042/16/3.4.9/_/download/batch/com.atlassian.confluence.keyboardshortcuts:confluence-keyboard-shortcuts/com.atlassian.confluence.keyboardshortcuts:confluence-keyboard-shortcuts.js" ></script>
+<script type="text/javascript" src="/s/2042/16/1.0/_/download/batch/legacy.confluence.web.resources:prototype/legacy.confluence.web.resources:prototype.js" ></script>
+
+    
+    <!-- end system javascript resources -->
+
+<script type="text/javascript" src="/plugins/builder/layout-resources.action?layoutId=CS225&amp;resource=javascript&amp;hash=1328035222385"></script>
+
+    
+
+
+
+    
+    <link rel="canonical" href="https://wiki.engr.illinois.edu/display/cs225/Study+suggestions">
+    <link rel="shortlink" href="https://wiki.engr.illinois.edu/x/YIADCw">
+    <meta name="wikilink" content="[cs225:Study suggestions]">
+
+</head>
+<body onload="BuilderEvents.onPageLoad();" onunload="BuilderEvents.onPageUnload();" class="atb-body layout-CS225  spacekey-cs225 mode-view context-page decorator-page action-viewpage " id="atb-document">
+
+
+<dl id="atb-accessKeys">
+  <dt>Access Keys:</dt>
+  <dd><a href="#atb-content" accesskey="0">Skip to content (Access Key - 0)</a></dd>
+</dl>
+
+
+
+<fieldset class="hidden parameters">
+    <input type="hidden" id="statusDialogHeading" value="What are you working on?">
+    <input type="hidden" id="statusDialogAccessibilityLabel" value="Enter your status (140 character limit)">
+    <input type="hidden" id="statusDialogLatestLabel" value="Last update:">
+    <input type="hidden" id="statusDialogUpdateButtonLabel" value="Update">
+    <input type="hidden" id="statusDialogCancelButtonLabel" value="Cancel">
+</fieldset>
+
+<fieldset class="hidden parameters">
+    <input type="hidden" id="globalSettingsAttachmentMaxSize" value="104857600">
+    <input type="hidden" id="userLocale" value="en_GB">
+    <input type="hidden" id="staticResourceUrlPrefix" value="/s/2042/16/_">
+    <input type="hidden" id="contextPath" value="">
+</fieldset>
+
+    
+
+
+<!--themebody.vm-->
+<script type="text/javascript" language="JavaScript">
+</script>
+<table align="center" width="100%" cellspacing="0" cellpadding="0" class="atb-shell" id="com-atlassian-confluence">
+    <tr>
+        <td style="vertical-align:top;"><div class="atb-p1"><div class="atb-p2"><div class="atb-p3">
+            <table class="layout atb-page" width="100%" height="100%" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td class="layout atb-upper"><div class="atb-u1"><div class="atb-u2">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr><td id="atb-header" class="layout atb-header"><div id="atb-headerdiv" class="layout atb-headerdiv">  <a href="/display/cs225?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a"  rel=" home"><img border="0" title="CS 225 Logo" class="builder-logo space-logo" src="/download/attachments/184779881/cs225?version=1&modificationDate=1294250582000" alt="space logo"/></a> </div></td></tr>
+                                 <tr><td id="atb-menu" class="layout atb-menu"><div id="atb-menudiv" class="layout atb-menudiv">  <div id="menu1" class="menubar menubar1  ajs-drop-down">
+    <ul id="menu1-data" class="menulist">
+    <li class="menuitem "><a href="/display/cs225/Home" title="Home">Home</a></li>
+<li class="menuitem "><a href="/display/cs225/Course+Info" title="Course Info">Course Info</a></li>
+<li class="menuitem "><a href="/display/cs225/Lectures" title="Lectures">Lectures</a></li>
+<li class="menuitem "><a href="/display/cs225/Sections" title="Sections">Sections</a></li>
+<li class="menuitem "><a href="/display/cs225/Calendar" title="Calendar">Office Hours</a></li>
+<li class="menuitem "><a href="/display/cs225/Assignments" title="Assignments">Assignments</a></li>
+<li class="menuitem "><a href="/display/cs225/Exams" title="Exams">Exams</a></li>
+<li class="menuitem "><a href="/display/cs225/Resources" title="Resources">Resources</a></li>
+<li class="menuitem "><a href="/display/cs225/Honors" title="Honors">Honors</a></li>
+
+
+<li class="menu-separator "> </li>
+<li class="menuitem ">View<ul class="submenu "><li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/document.png" style="width:16;height:16;vertical-align:absmiddle;" class="nopie"  title="document" alt="document"/>This page<ul class="submenu "><li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/document_plain.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="document_plain" alt="document_plain"/><a href="/display/cs225/Study+suggestions?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;decorator=normal"  rel="nofollow">Normal view</a></li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/printer.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="printer" alt="printer"/><a href="/display/cs225/Study+suggestions?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;decorator=printable"  rel="nofollow">Printable view</a></li>
+  <li class="menu-separator "> </li>
+  
+  
+  
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/mail2.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="mail2" alt="mail2"/><a href="/pages/mailpage/mailpage.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;pageId=184778848"  id="mailPageLink" class="" rel="nofollow">Email this page</a></li>
+  </ul></li>
+ <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/documents.png" style="width:16;height:16;vertical-align:absmiddle;" class="nopie"  title="documents" alt="documents"/>Other pages<ul class="submenu "><li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/house.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="house" alt="house"/><a href="/display/cs225?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a"  rel=" home">Home page</a></li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/presentation.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="presentation" alt="presentation"/><a href="/dashboard.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a"  rel="">Dashboard</a></li>
+  <li class="menu-separator "> </li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/news.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="news" alt="news"/><a href="/pages/viewrecentblogposts.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;key=cs225"  rel="">News</a></li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/document_new.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="document_new" alt="document_new"/><a href="/pages/recentlyupdated.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;key=cs225"  rel="">Recent updates</a></li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/magic-wand.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="magic-wand" alt="magic-wand"/><a href="/dashboard/configurerssfeed.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a"  rel="">RSS feed builder</a></li>
+  <li class="menu-separator "> </li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/index.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="index" alt="index"/><a href="/pages/listpages-alphaview.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;key=cs225"  rel=" index">Index</a></li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/document_into.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="document_into" alt="document_into"/><a href="/pages/listpages-dirview.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;key=cs225&amp;openId=184778848"  rel="">Site map</a></li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/bookmark.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="bookmark" alt="bookmark"/><a href="/labels/listlabels-heatmap.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;key=cs225"  rel="">Labels</a></li>
+  <li class="menu-separator "> </li>
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/paperclip.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="paperclip" alt="paperclip"/><a href="/spaces/listattachmentsforspace.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;key=cs225"  rel="nofollow">Attachments index</a></li>
+  
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/users3.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="users3" alt="users3"/><a href="/browsepeople.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a"  rel="">People Directory</a></li>
+ </ul></li>
+ <li class="menu-separator "> </li>
+ <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/user1.png" style="width:16;height:16;vertical-align:absmiddle;" class="nopie"  title="user1" alt="user1"/>Account<ul class="submenu "><li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/user1_into.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="user1_into" alt="user1_into"/><a href="/login.action?os_destination=%2Fdisplay%2Fcs225%2FStudy%2Bsuggestions&amp;atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a"  rel="nofollow">Log in</a></li>
+  <li class="menu-separator "> </li>
+  
+  <li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/clock.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="clock" alt="clock"/><a href="javascript:void(window.open('/users/viewuserhistory.action','user_history', 'width=620, height=600, resizable'));"  rel="nofollow">History</a></li>
+  
+ </ul></li>
+ </ul></li>
+<li class="menuitem ">Edit<ul class="submenu "><li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/registry.png" style="width:16;height:16;vertical-align:absmiddle;" class="nopie"  title="registry" alt="registry"/>Administration<ul class="submenu "><li class="menuitem "><img src="/s/2042/16/4.2.2/_/download/resources/com.adaptavist.confluence.themes.sitebuilder:sitebuilder/icons/server_document.png" style="width:16px;height:16px;vertical-align:absmiddle;" class="nopie" title="server_document" alt="server_document"/><a href="/spaces/viewspacesummary.action?atl_token=c99ffac6e1776b2da19e7e8f0e32edf26d19186a&amp;key=cs225"  rel="nofollow">Advanced</a></li>
+  </ul></li>
+</ul></li>
+
+    </ul>
+</div>
+<script type="text/javascript" language="JavaScript">
+
+jQuery(function($) {
+ $("#menu1")[0].hide=function(){};
+});
+
+function initmenu_1() {
+    if (window.DynarchMenu) {
+        var menuOpts={electric:250, tooltips:true, shadows:[4,6], smoothShadows:true, blink:false, lazy:false, setFocus:false, scrolling:true};
+        if (jQuery.browser.opera) menuOpts["scrolling"]=false;
+        document.getElementById("menu1-data").className="";
+        DynarchMenu.setup("menu1-data", menuOpts);
+    }
+}
+
+AJS.toInit(function() {window.setTimeout(initmenu_1,0)});
+
+</script>
+ </div></td></tr>
+                                <tr><td id="atb-navigation" class="layout atb-navigation"><div id="atb-navigationdiv" class="layout atb-navigationdiv">  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle"><span class="breadcrumbs"><ol class="breadcrumbs ellipsis" id="breadcrumbs.list"><li class="breadcrumb breadcrumb0 dashboardbreadcrumb"><a href="/dashboard.action">Dashboard</a>&nbsp;&gt;</li><li class="breadcrumb breadcrumb1 spacebreadcrumb"><a href="/display/cs225">CS 225</a>&nbsp;&gt;</li><li class="breadcrumb breadcrumb2 pagebreadcrumb"><a href="/display/cs225/Exams">Exams</a>&nbsp;&gt;</li><li class="breadcrumb last breadcrumb3 pagebreadcrumb"><a href="/display/cs225/Study+suggestions">Study suggestions</a></li></ol></span></td>
+<td align="right" valign="middle">
+
+
+
+
+</td></tr></table> </div></td></tr>
+                            </table></div></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="layout atb-lower"><div class="atb-l1"><div class="atb-l2">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr class="layout content-row">
+                                    <td class="layout atb-titlecontent">
+                                        <div id="atb-content" class="layout atb-content"><div id="atb-contentdiv" class="layout atb-contentdiv">
+                                            <!--page.vmd-->
+    
+    
+        
+    
+    
+                    
+    
+<div id="content" class="page view">
+
+
+
+
+<fieldset id="link-to-page-fields" class="hidden parameters">
+    <input type="hidden" id="linkToThisPageHeading" value="Link to this Page">
+    <input type="hidden" id="linkToThisPageLink" value="Link">
+    <input type="hidden" id="linkToThisPageTinyLink" value="Tiny Link">
+    <input type="hidden" id="linkToThisPageWikiMarkup" value="Wiki Markup">
+    <input type="hidden" id="linkToThisPageClose" value="Close">
+</fieldset>
+<fieldset class="hidden parameters">
+    <input type="hidden" title="movePageDialogViewPageTitle" value="Move Page &ndash; &#8216;Study suggestions&#8217;">
+    <input type="hidden" title="movePageDialogEditPageTitle" value="Set Page Location">
+    <input type="hidden" title="movePageDialogMoveButton" value="Move">
+    <input type="hidden" title="movePageDialogOkButton" value="OK">
+    <input type="hidden" title="movePageDialogCancelButton" value="Cancel">
+    <input type="hidden" title="movePageDialogBrowsePanelTip" value="Click to select the new parent page for this page and its children.">
+    <input type="hidden" title="movePageDialogSearchPanel" value="Search">
+    <input type="hidden" title="movePageDialogHistoryPanel" value="Recently Viewed">
+    <input type="hidden" title="movePageDialogHistoryNoResults" value="There were no recently viewed pages found.">
+    <input type="hidden" title="movePageDialogLocationPanel" value="Known Location">
+    <input type="hidden" title="movePageDialogLocationNotFound" value="The specified page was not found.">
+    <input type="hidden" title="movePageDialogBrowsePanel" value="Browse">
+    <input type="hidden" title="movePageDialogPanelLoadErrorMsg" value="Error reading the panel content from the server.">
+    <input type="hidden" title="movePageDialogPanelLoadErrorTip" value="You could try reloading the page and launching the dialog again.">
+    <input type="hidden" title="movePageDialogPanelLoadErrorStatus" value="HTTP Status">
+    <input type="hidden" title="movePageDialogNoSelectionErrorMsg" value="You must make a selection in the tree before you can move the page.">
+    <input type="hidden" title="movePageDialogSearchError" value="Failed to retrieve search results from the server.">
+    <input type="hidden" title="movePageDialogSearchNoResults" value="There were no pages found containing <b>{0}</b>.">
+    <input type="hidden" title="movePageDialogSearchResultCount" value="Showing <b>{0}</b>-<b>{1}</b> of <b>{2}</b> pages containing <b>{3}</b>.">
+    <input type="hidden" title="movePageDialogMoveFailed" value="Move failed. There was a problem contacting the server.">
+    <input type="hidden" title="movePageDialogCannotChangeSpace" value="You cannot move this page to another space because you do not have permission to remove it from this space.">
+    <input type="hidden" title="pageTitle" value="Study suggestions"/>
+    <input type="hidden" title="parentPageTitle" value="Exams"/>
+    <input type="hidden" title="fromPageTitle" value=""/>
+    <input type="hidden" title="spaceKey" value="cs225"/>
+    <input type="hidden" title="spaceName" value="CS 225"/>
+    <input type="hidden" title="movePageDialogInvalidLocation" value="You cannot move a page to be underneath itself or its children."/>
+    <input type="hidden" title="movePageDialogOrderingTitle" value="Page Ordering"/>
+    <input type="hidden" title="movePageDialogBackButton" value="Back"/>
+    <input type="hidden" title="movePageDialogMoveAndOrderButton" value="Reorder"/>
+    <input type="hidden" title="movePageDialogNextButton" value="Move"/>
+</fieldset>
+
+<script type="text/x-template" title="movePageDialog">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Specify the new parent page for this page and its children by space and title.
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <fieldset>
+            
+
+    <legend class="assistive"><span>Change the Parent Page to a Known Page</span></legend>
+            <div class="row">
+                <label for="new-space">New space:</label>
+                <div class="value new-space-value">
+                    <input id="new-space-key" name="new-space-key" type="hidden" value="cs225">
+                                            <span class="space-input">
+                            <input id="new-space" name="new-space" value="CS 225" disabled="disabled">
+                        </span>
+                        <span class="description warning">You cannot move this page to another space because you do not have permission to remove it from this space.</span>
+                                        <div class="new-space-dropdown aui-dd-parent autocomplete"></div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="new-parent-page">New parent page:</label>
+                <div class="value new-parent-page-value">
+                    <span class="page-input">
+                        <input id="new-parent-page" name="new-parent-page" value="Exams">
+                    </span>
+                    <span class="description">Start typing a page title to see a list of suggestions.</span>
+                    <div class="new-parent-page-dropdown aui-dd-parent autocomplete"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="location-info">
+        <div class="row">
+            <label>Current location:</label>
+            <div class="value breadcrumbs-container">
+                <div class="breadcrumbs-line">
+                    <ul id="current-parent-breadcrumbs" class="breadcrumbs">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <label>New location:</label>
+            <div class="value breadcrumbs-container">
+                <div class="breadcrumbs-line">
+                    <ul id="new-parent-breadcrumbs" class="breadcrumbs">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/x-template" title="movePageErrors">
+    <div id="move-errors" class="hidden warning"></div>
+</script>
+<script type="text/x-template" title="movePageBreadcrumb">
+    <li><a class="{2}" title="{3}" tabindex="-1"><span>{0}</span></a></li>
+</script>
+<script type="text/x-template" title="movePageBreadcrumbLoading">
+    <li class="loading"><span>Loading breadcrumbs&hellip;</span></li>
+</script>
+<script type="text/x-template" title="movePageBreadcrumbError">
+    <li class="warning last"><span>Error retrieving breadcrumbs.</span></li>
+</script>
+<script type="text/x-template" title="movePageNoMatchingPages">
+    <ol><li><span class="warning">No matching pages found.</span></li></ol>
+</script>
+<script type="text/x-template" title="movePageNoMatchingSpaces">
+    <ol><li><span class="warning">No matching spaces found.</span></li></ol>
+</script>
+
+<script type="text/x-template" title="movePageSearchPanel">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Search for and select the new parent page for this page and its children.
+            </div>
+        </div>
+    </div>
+    <div id="move-page-search-container" class="row">
+        <div class="search-form">
+            <fieldset>
+                
+
+    <legend class="assistive"><span>Search for a New Parent Page</span></legend>
+                
+
+    <label  for="move-page-search-query" class="assistive">Search keywords</label>
+                <input class="search-query" id="move-page-search-query">
+                
+
+    <label  for="move-page-search-space" class="assistive">Search in space</label>
+                                    <select id="move-page-search-space" class="search-space" disabled="disabled">
+                        <option value="cs225" selected="selected">CS 225</option>
+                    </select>
+                                <input type="button" value="Search">
+                                    <div class="description warning">You cannot move this page to another space because you do not have permission to remove it from this space.</div>
+                            </fieldset>
+        </div>
+        <div class="search-results">
+        </div>
+    </div>
+</script>
+<script type="text/x-template" title="movePageSearchResultsLoading">
+    <div class="searching">Searching…</div>
+</script>
+
+<script type="text/x-template" title="movePageHistoryPanel">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Select the new parent page for this page and its children from your history.
+            </div>
+        </div>
+    </div>
+    <div id="move-page-search-container" class="row">
+        <div class="search-results">
+        </div>
+    </div>
+</script>
+<script type="text/x-template" title="movePageHistoryLoading">
+    <div class="searching">Loading…</div>
+</script>
+<script type="text/x-template" title="movePageBrowsePanel">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Click to select the new parent page for this page and its children.
+            </div>
+        </div>
+    </div>
+    <div class="tree"></div>
+</script>
+<script type="text/x-template" title="movePagePanelLoading">
+    <span>Loading…</span>
+</script>
+<script type="text/x-template" title="movePageBrowsePanelSpace">
+    <ul><li id='tree-root-node-item' class='root-node-list-item'><a class='root-node' href='#'>{0}</a></li></ul>
+</script>
+<script type="text/x-template" title="orderingPagePanel">
+<div id="orderingPlaceHolder"></div>
+</script>
+<script type="text/x-template" title="reorderCheckbox">
+<span id="reorderRequirement"><input id="reorderCheck" type="checkbox" name="reorderFlag" title="Choose the position of this page within the list of child pages."/><label for="reorderCheck" title="Choose the position of this page within the list of child pages.">Reorder</label></span>
+</script>
+<script type="text/x-template" title="move-help-link">
+    <div class="dialog-help-link">
+            <a href="http://docs.atlassian.com/confluence/docs-34/Moving+a+Page" target="_blank">Help</a>
+    </div>
+</script>
+<script type="text/x-template" title="searchResultsGrid">
+    <table>
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <th class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></th>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+<!-- Start restrictions section -->
+<fieldset class="hidden parameters i18n">
+        <input type="hidden" title="i18n.page.perms.error.invalid.entity.names" value="Unknown user or group:">
+        <input type="hidden" title="i18n.page.perms.dialog.heading" value="Page Restrictions">
+        <input type="hidden" title="i18n.page.perms.editing.restricted.to" value="Editing restricted to:">
+        <input type="hidden" title="i18n.cancel.name" value="Cancel">
+        <input type="hidden" title="i18n.close.name" value="Close">
+        <input type="hidden" title="i18n.update.name" value="Save">
+</fieldset>
+
+<script type="text/x-template" title="page-permissions-div">
+<div id="page-permissions-div">
+    <div id="page-permissions-editor-form">
+
+                <div id="page-permissions-error-div" class="hidden">
+            <a href="#" id="permissions-error-div-close">Ok</a>
+            <div></div>
+        </div>
+
+                <div id="page-permissions-type-radios" class="page-permissions-label-rows">
+            <div>
+                <input id="restrictViewRadio" type="radio" checked="checked" name="pagePermissionTypeRadio" value="view"/>
+                <label for="restrictViewRadio">Restrict viewing of this page</label>
+                <input id="restrictEditRadio" type="radio" name="pagePermissionTypeRadio" value="edit"/>
+                <label for="restrictEditRadio">Restrict editing of this page</label>
+            </div>
+        </div>
+        <div id="page-permissions-input" class="page-permissions-label-rows">
+            <div class="page-permissions-label">To:</div>
+            <div id="page-permissions-chooser-box">
+                                <span id="page-permissions-choose-user" class="ajs-button">
+                    
+
+
+
+    
+
+
+
+<a href="#" id='userpicker-popup-link-image' onClick="var picker = window.open('/spaces/openuserpicker.action?key=cs225&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;"><img src="/s/2042/16/_/images/icons/user_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose users" /></a>
+<a href="#" id='userpicker-popup-link-text' onClick="var picker = window.open('/spaces/openuserpicker.action?key=cs225&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;">Person...</a>
+
+
+                </span>
+                <span id="page-permissions-choose-group" class="ajs-button">
+                    
+
+
+
+    
+
+ 
+
+<a href="#" id='grouppicker-popup-link-image' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=cs225&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;"><img src="/s/2042/16/_/images/icons/group_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose groups" /></a>
+<a href="#" id='grouppicker-popup-link-text' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=cs225&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;">Group...</a>
+
+
+                </span>
+            </div>
+            <div id="page-permissions-input-box">
+                                <span>
+                    <input type="text" id="page-permissions-names-input" class="input-placeholder" value="Enter user or group name" name="permissionNames" size="30" autocomplete="off"/>
+                </span>
+                <input
+    type="hidden"
+                            id="page-permissions-names-hidden"           />                <img height="16px" width="1px" src="/s/2042/16/_/images/border/spacer.gif"/>
+                <input type="button" id="add-typed-names" value="Restrict">
+            </div>
+        </div>
+    </div>
+    <div id="page-permissions-tables">
+        <div id="page-permissions-table-div">
+                        <table id="page-permissions-table" class="page-permissions-table">
+                <tr id="page-permissions-no-views" class="marker-row">
+                    <td colspan="3" class="page-permissions-marker-cell"><span>No view restrictions are defined for this page</span></td>
+                </tr>
+                <tr id="page-permissions-no-edits" class="marker-row">
+                    <td colspan="3" class="page-permissions-marker-cell"><span>No edit restrictions are defined for this page</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="page-inherited-permissions-table-div" class="hidden">
+            <span id="page-inherited-permissions-table-desc">
+                <a class="icon twisty-closed">Show/Hide</a>
+                <a id="toggle-inherited-permissions" title="Click to see inherited restrictions">This page has restricted parent pages. It can only be seen by users who can see those parent pages.</a>
+            </span>
+            <div id="page-inherited-permissions-tables" class="hidden page-inheritance-togglable"></div>
+        </div>
+    </div>
+</div>
+</script>
+
+<script type="text/x-template" title="permissions-row-template">
+    <tr class="permission-row">
+                                
+                <td class="page-permissions-marker-cell" width="20%">
+            <span>Viewing restricted to:</span>
+        </td>
+                <td class="permission-entity" nowrap="true" width="40%">
+            <span class="entity-container">
+                <img class="permission-entity-picture"/>
+                <span class="permission-entity-display-name"></span>
+                <span class="permission-entity-name-wrap">&nbsp;(<span class="permission-entity-name"></span>)</span>
+            </span>
+        </td>
+        <td class="permission-detail-column">
+            <div class="permission-remove-div">
+                <a href="#" class="remove-permission-link">Remove restriction</a>
+            </div>
+        </td>
+    </tr>
+</script>
+<script type="text/x-template" title="permissions-username-no-suggestion-template">
+    <ol>
+        <li><a href="#" class="message"><span>No matches</span></a></li>
+    </ol>
+</script>
+<script type="text/x-template" title="page-inherited-permissions-table-div-template">
+        <div class="page-inherited-permissions-owner-div">
+        <div class="page-inherited-permissions-table-desc">Viewing restrictions apply to “<a></a>”. In order to see “<span></span>”, a user must be in the following list of users and groups:</div>
+        <table class="page-permissions-table"></table>
+    </div>
+</script>
+<script type="text/x-template" title="page-restrictions-help-link">
+    <div class="dialog-help-link">
+            <a href="http://docs.atlassian.com/confluence/docs-34/Page+Restrictions" target="_blank">Help</a>
+    </div>
+</script>
+<!-- End restrictions section -->
+
+<fieldset class="hidden parameters">
+    <input type="hidden" title="spaceKeyEncoded" value="cs225">
+    <input type="hidden" title="spaceKeyDecoded" value="cs225">
+</fieldset>
+
+                      
+    
+     
+     <fieldset class="hidden parameters">
+                <input type="hidden" title="browsePageTreeMode" value="view">
+    </fieldset>
+    <div class="wiki-content">
+        <!-- wiki content -->
+            <h3><a name="Studysuggestions-Studyingforthefinal%3A"></a>Studying for the final:  </h3>
+<ol>
+	<li>make a list of all of our data structures.</li>
+	<li>make sure you understand the basic function of each (is it a special purpose structure or a dictionary)?</li>
+	<li>make sure you understand the implementation issues for each (why is it ok to store a heap in an array, but we can't do that for an AVL tree?)</li>
+	<li>make sure you understand the running times of each of the basic functions (for most, this means the running time of remove, insert,<br/>
+and find)  </li>
+	<li>spend a fair amount of time on graph implementations, making sure you understand the tradeoffs between adjacency lists and<br/>
+arrays, and why each of those is better than just an edge list </li>
+	<li>we did the following graph algorithms:  traversals - DFS &amp; BFS, MST - Prim's &amp; Kruskal's.  Make sure you understand running times and implementations of each.</li>
+	<li>the few coding questions that will be on  the exam will come from MP6 &amp; 7, and also from the lab exercises. make sure you can do all that coding.</li>
+</ol>
+
+
+<p>I strongly suggest you get together with 2 other people and just crank through the material mentioned above.  If you'd like to use the class wiki to organize your studying, feel free to do so.  There is a student editable section under <a href="/display/cs225/Resources" title="Resources">Resources</a>.</p>
+    </div>
+ <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://wiki.engr.illinois.edu/display/cs225/Study+suggestions"
+    dc:identifier="https://wiki.engr.illinois.edu/display/cs225/Study+suggestions"
+    dc:title="Study suggestions"
+    trackback:ping="https://wiki.engr.illinois.edu/rpc/trackback/184778848"/>
+</rdf:RDF>
+-->
+</div>
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+<fieldset class="hidden parameters">
+        <input type="hidden" title="i18n.done.name" value="Done">
+        <input type="hidden" title="i18n.manage.watchers.dialog.title" value="Manage Watchers">
+        <input type="hidden" title="i18n.manage.watchers.unable.to.remove.error" value="Failed to remove watcher. Refresh page to see latest status.">
+        <input type="hidden" title="i18n.manage.watchers.status.adding.watcher" value="Adding watcher&amp;hellip;">
+</fieldset>
+<script type="text/x-template" title="manage-watchers-dialog">
+<div class="dialog-content">
+    <div class="column page-watchers">
+        <h3>Watching this page</h3>
+        <p class="description">These people are notified when the page is changed. You can add or remove people from this list.</p>
+        <form action="/json/addwatch.action" method="POST">
+                <input type="hidden" name="atl_token" value="c99ffac6e1776b2da19e7e8f0e32edf26d19186a">
+            <input type="hidden" name="pageId" value="184778848"/>
+            <input type="hidden" id="add-watcher-username" name="username" value=""/>
+            <label for="add-watcher-user">User</label>
+            <input id="add-watcher-user" name="userFullName" type="search" class="autocomplete-user"
+               value="" placeholder="Full name or username" autocomplete="off"
+               data-max="10" data-target="#add-watcher-username" data-dropdown-target="#add-watcher-dropdown"
+               data-template="{title}" data-none-message="No matching users found.">
+            <input id="add-watcher-submit" type="submit" name="add" value="Add">
+            <div id="add-watcher-dropdown" class="aui-dd-parent autocomplete"></div>
+            <div class="status hidden"></div>
+        </form>
+        <ul class="user-list">
+            <li class="loading">Loading&hellip;</li>
+            <li class="no-users hidden">No page watchers</li>
+        </ul>
+    </div>
+    <div class="column space-watchers">
+        <h3>Watching this space</h3>
+        <p class="description">These people are notified when any content in the space is changed. You cannot modify this list.</p>
+        <ul class="user-list">
+            <li class="loading">Loading&hellip;</li>
+            <li class="no-users hidden">No space watchers</li>
+        </ul>
+    </div>
+</div>
+</script>
+<script type="text/x-template" title="manage-watchers-user">
+    <li class="watch-user">
+        <img class="profile-picture confluence-userlink" src="{iconUrl}" data-username="{username}">
+        <a class="confluence-userlink" href="{url}" data-username="{username}">{fullName} <span class="username">({username})</span></a>
+        <span class="remove-watch" title="Remove"
+            data-username="{username}">Remove</span>
+    </li>
+</script>
+<script type="text/x-template" title="manage-watchers-help-link">
+    <div class="dialog-help-link">
+            <a href="http://docs.atlassian.com/confluence/docs-34/Managing+Watchers" target="_blank">Help</a>
+    </div>
+</script>
+
+<!--END page.vmd-->
+                                        </div></div>
+                                    </td>
+                                </tr>
+                                <tr><td id="atb-footnote" class="layout atb-footnote"><div id="atb-footnotediv" class="layout atb-footnotediv">     
+<div class="commentsBlock">
+    
+
+
+
+
+            
+    
+
+        
+<fieldset class="parameters hidden">
+    <input type="hidden" id="deleteCommentConfirmMessage" value="Are you sure you want to remove the comment?">
+    <input type="hidden" id="collapseTooltip" value="Click to toggle the display of this comment.">
+        </fieldset>
+
+<fieldset class="hidden parameters i18n">
+        <input type="hidden" title="i18n.cancel.name" value="Cancel">
+</fieldset>
+
+
+
+
+
+
+<div id="comments-section" class="pageSection">
+    
+    
+    
+    
+                                    </div>
+
+
+</div>
+  </div></td></tr>
+                            </table>
+                        </div></div></td>
+                    </tr>
+                    <tr><td id="atb-footer" class="layout atb-footer"><div id="atb-footerdiv" class="layout atb-footerdiv"> Adaptavist Theme Builder  </div></td></tr>
+                </tbody>
+            </table></div></div></div>
+        </td>
+    </tr>
+    <tr>
+        <td id="attribution" class="attribution" align="center"><div>
+            <a href="https://www.adaptavist.com/">Adaptavist Theme Builder</a> (4.2.2) Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> 3.4.9, the <a href="2042" class="hover-footer-link">Enterprise Wiki</a>
+        </div></td>
+    </tr>
+</table>
+<!--END themebody.vm-->
+
+
+<!--footer.vmd-->
+<script type="text/javascript">
+var domainName = "https://wiki.engr.illinois.edu";
+var entityId = "184778848";
+var spaceKey = "cs225";
+</script>
+<!--[if gte IE 5.5000]>
+<script type="text/javascript">
+    if (window.DynarchMenu) {
+        DynarchMenu.preloadImages(new RegExp("^/hmenu/"));
+    }
+</script>
+<![endif]-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5626967-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!--END footer.vmd-->
+</body>
+</html>
